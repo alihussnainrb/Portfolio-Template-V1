@@ -11,16 +11,15 @@ export default function Home() {
         <h1 className='text-6xl font-bold text-white/70 mt-2'>I build things for the web.</h1>
         <div className="mt-10 max-w-2xl">
           <p className="text-base font-normal text-gray-300/70">
-            I'm a web and mobile developer focused on creating seamless experiences that exceed user expectations.
+         &apos;m a web and mobile developer focused on creating seamless experiences that exceed user expectations.
             With expertise in design and development, I thrive on solving complex challenges and delivering high-quality products.
-            {/* Let's bring your digital vision to life together. */}
             <br /><br />
-            Let's work together to bring your digital vision to life!
+            &apos;s work together to bring your digital vision to life!
           </p>
         </div>
         <div className="mt-20">
           <a href="/" className="border border-green-500 rounded-md px-6 py-3 md:py-4 text-sm font-medium text-green-500 shadow hover:bg-green-500/20 inline-flex items-center">
-            Let's Work Together <FaChevronRight className="ml-3" />
+            L&apos;s Work Together <FaChevronRight className="ml-3" />
           </a>
         </div>
       </section>
@@ -35,7 +34,7 @@ export default function Home() {
               <div className='ml-10 w-80 h-[1px] bg-white/30'></div>
             </div>
             <p className='max-w-xl mt-10 text-base font-normal text-gray-300/70'>
-              Hello! My name is <span className="font-bold">Ali</span> and I enjoy creating things that live on the internet.I’m a software engineer specializing in building web and mobile developer with a passion for creating exceptional digital experiences that exceed user expectations. With years of experience in HTML, CSS, React.js, and Next.js, I have developed a deep understanding of how to craft functional, user-friendly, and visually stunning websites that help businesses achieve their goals.
+              Hello! My name is <span className="font-bold">Ali</span> and I enjoy creating things that live on the internet.I&apos;m a software engineer specializing in building web and mobile developer with a passion for creating exceptional digital experiences that exceed user expectations. With years of experience in HTML, CSS, React.js, and Next.js, I have developed a deep understanding of how to craft functional, user-friendly, and visually stunning websites that help businesses achieve their goals.
               <br />
               In addition to web development, I have a strong background in mobile app development, with expertise in both Android Native and Flutter. Whether it's designing intuitive interfaces, integrating complex features, or optimizing performance, I have the skills to deliver high-quality mobile apps that meet the unique needs of each project.
               <br /><br />
@@ -43,7 +42,7 @@ export default function Home() {
               <br /><br />
               My commitment to collaboration and communication means that I am always striving to exceed my clients' expectations. I am comfortable working in both individual and team settings and am always looking for opportunities to learn and grow as a professional.
               <br /><br />
-              If you're looking for a highly skilled web and mobile developer who can help you achieve your digital goals, then look no further. I am confident that my skills, expertise, and passion for innovation can help bring your vision to life.
+              If yo&apos;re looking for a highly skilled web and mobile developer who can help you achieve your digital goals, then look no further. I am confident that my skills, expertise, and passion for innovation can help bring your vision to life.
             </p>
           </div>
           <div className="w-auto">
@@ -105,7 +104,7 @@ export default function Home() {
             <div className='flex items-center'>
               <h1 className='font-semibold text-white text-4xl min-w-max'>
                 <span className='text-green-500 mr-4 text-3xl'>03.</span>
-                Some Things I've Built
+                Some Things I&apos;ve Built
               </h1>
               <div className='ml-10 w-80 h-[1px] bg-white/30'></div>
             </div>
