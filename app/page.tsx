@@ -36,11 +36,11 @@ export default function Home() {
             <p className='max-w-xl mt-10 text-base font-normal text-gray-300/70'>
               Hello! My name is <span className="font-bold">Ali</span> and I enjoy creating things that live on the internet.I&apos;m a software engineer specializing in building web and mobile developer with a passion for creating exceptional digital experiences that exceed user expectations. With years of experience in HTML, CSS, React.js, and Next.js, I have developed a deep understanding of how to craft functional, user-friendly, and visually stunning websites that help businesses achieve their goals.
               <br />
-              In addition to web development, I have a strong background in mobile app development, with expertise in both Android Native and Flutter. Whether it's designing intuitive interfaces, integrating complex features, or optimizing performance, I have the skills to deliver high-quality mobile apps that meet the unique needs of each project.
+              In addition to web development, I have a strong background in mobile app development, with expertise in both Android Native and Flutter. Whether it&apos;s designing intuitive interfaces, integrating complex features, or optimizing performance, I have the skills to deliver high-quality mobile apps that meet the unique needs of each project.
               <br /><br />
               Throughout my career, I have maintained a strong focus on user-centered design, human-computer interaction, and accessibility. I believe that the best products are those that are easy to use, visually appealing, and provide a seamless user experience. To achieve this, I work closely with my clients to understand their unique needs and tailor my approach accordingly.
               <br /><br />
-              My commitment to collaboration and communication means that I am always striving to exceed my clients' expectations. I am comfortable working in both individual and team settings and am always looking for opportunities to learn and grow as a professional.
+              My commitment to collaboration and communication means that I am always striving to exceed my clients expectations. I am comfortable working in both individual and team settings and am always looking for opportunities to learn and grow as a professional.
               <br /><br />
               If yo&apos;re looking for a highly skilled web and mobile developer who can help you achieve your digital goals, then look no further. I am confident that my skills, expertise, and passion for innovation can help bring your vision to life.
             </p>
