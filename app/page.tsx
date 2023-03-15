@@ -19,7 +19,7 @@ export default function Home() {
         </div>
         <div className="mt-20">
           <a href="/" className="border border-green-500 rounded-md px-6 py-3 md:py-4 text-sm font-medium text-green-500 shadow hover:bg-green-500/20 inline-flex items-center">
-            L&apos;s Work Together <FaChevronRight className="ml-3" />
+            Let&apos;s Work Together <FaChevronRight className="ml-3" />
           </a>
         </div>
       </section>
