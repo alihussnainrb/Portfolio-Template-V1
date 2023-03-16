@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import { FromTopReveal } from './components/RevealComponents'
 
 type Props = {}
 
@@ -8,45 +9,57 @@ export default function Header({ }: Props) {
         <header aria-label="Site Header" className='pt-4'>
             <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
                 <div className="flex h-16 items-center justify-between">
-                    <a className="block text-green-500 font-extrabold text-3xl" href="/">
-                        <span className='text-white/80'>A</span>H
-                    </a>
+                    <FromTopReveal>
+                        <a className="block text-green-500 font-extrabold text-3xl" href="/">
+                            <span className='text-white/80'>A</span>H
+                        </a>
+                    </FromTopReveal>
 
                     <div className="md:flex md:items-center md:gap-6">
                         <nav aria-label="Site Nav" className="hidden md:block">
                             <ul className="flex items-center gap-6 text-sm">
                                 <li>
-                                    <a href="#about" className="text-white transition hover:text-green-500 font-medium">
-                                        <span className='text-green-500 mr-1'>01. </span>
-                                        About
-                                    </a>
+                                    <FromTopReveal>
+                                        <a href="#about" className="text-white transition hover:text-green-500 font-medium">
+                                            <span className='text-green-500 mr-1'>01. </span>
+                                            About
+                                        </a>
+                                    </FromTopReveal>
                                 </li>
                                 <li>
-                                    <a href="#experience" className="text-white transition hover:text-green-500 font-medium">
-                                        <span className='text-green-500 mr-1'>02. </span>
-                                        Experience
-                                    </a>
+                                    <FromTopReveal delay={0.2}>
+                                        <a href="#experience" className="text-white transition hover:text-green-500 font-medium">
+                                            <span className='text-green-500 mr-1'>02. </span>
+                                            Experience
+                                        </a>
+                                    </FromTopReveal>
                                 </li>
                                 <li>
-                                    <a href="#work" className="text-white transition hover:text-green-500 font-medium">
-                                        <span className='text-green-500 mr-1'>03. </span>
-                                        Work
-                                    </a>
+                                    <FromTopReveal delay={0.4}>
+                                        <a href="#work" className="text-white transition hover:text-green-500 font-medium">
+                                            <span className='text-green-500 mr-1'>03. </span>
+                                            Work
+                                        </a>
+                                    </FromTopReveal>
                                 </li>
                                 <li>
-                                    <a href="#contact" className="text-white transition hover:text-green-500 font-medium">
-                                        <span className='text-green-500 mr-1'>04. </span>
-                                        Contact
-                                    </a>
+                                    <FromTopReveal delay={0.6}>
+                                        <a href="#contact" className="text-white transition hover:text-green-500 font-medium">
+                                            <span className='text-green-500 mr-1'>04. </span>
+                                            Contact
+                                        </a>
+                                    </FromTopReveal>
                                 </li>
                             </ul>
                         </nav>
 
                         <div className="flex items-center gap-4">
                             <div className="sm:flex sm:gap-4">
-                                <a href="/" className="border border-green-500 rounded-md px-4 py-1.5 md:py-2 text-sm font-medium text-green-500 shadow hover:bg-green-500/20">
-                                    Resume
-                                </a>
+                                <FromTopReveal delay={0.8}>
+                                    <a href="/" className="border border-green-500 rounded-md px-4 py-1.5 md:py-2 text-sm font-medium text-green-500 shadow hover:bg-green-500/20">
+                                        Resume
+                                    </a>
+                                </FromTopReveal>
                             </div>
 
                             <div className="block md:hidden">

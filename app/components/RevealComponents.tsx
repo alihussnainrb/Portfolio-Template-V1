@@ -3,9 +3,21 @@ import React from "react";
 import { motion } from "framer-motion";
 
 
-export function PopupReveal({ className, children, duration = 1 }: {
+
+type DefaultRevealProps = {
     className?: string,
     duration?: number,
+    delay?: number,
+    bounce?: number,
+    children: React.ReactNode,
+}
+
+
+export function PopupReveal({ className, children, duration = 1, delay = 0, bounce = 0 }: {
+    className?: string,
+    duration?: number,
+    delay?: number,
+    bounce?: number,
     children: React.ReactNode,
 }) {
     return (
@@ -15,8 +27,9 @@ export function PopupReveal({ className, children, duration = 1 }: {
                 scale: 1,
                 transition: {
                     type: "spring",
-                    bounce: 0.4,
-                    duration: duration
+                    bounce: bounce,
+                    duration: duration,
+                    delay: delay,
                 }
             }}
             viewport={{ once: false, amount: 0 }}
@@ -29,20 +42,25 @@ export function PopupReveal({ className, children, duration = 1 }: {
 
 
 
-export function FromLeftReveal({ className, children, duration = 1 }: {
+
+export function FadeReveal({ className, children, duration = 1, delay = 0, bounce = 0 }: {
     className?: string,
     duration?: number,
+    delay?: number,
+    bounce?: number,
     children: React.ReactNode,
 }) {
     return (
         <motion.div
-            initial={{ x: -500 }}
+            initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{
-                x: 0,
+                opacity: 1,
+                scale: 1,
                 transition: {
                     type: "spring",
-                    bounce: 0.4,
-                    duration: duration
+                    bounce: bounce,
+                    duration: duration,
+                    delay: delay,
                 }
             }}
             viewport={{ once: false, amount: 0 }}
@@ -54,20 +72,119 @@ export function FromLeftReveal({ className, children, duration = 1 }: {
 }
 
 
-export function FromRightReveal({ className, children, duration = 1 }: {
+
+export function FromLeftReveal({ className, children, duration = 1, delay = 0, bounce = 0 }: {
     className?: string,
     duration?: number,
+    delay?: number,
+    bounce?: number,
     children: React.ReactNode,
 }) {
     return (
         <motion.div
-            initial={{ x: 500 }}
+            initial={{ x: "-100%" }}
             whileInView={{
                 x: 0,
                 transition: {
                     type: "spring",
-                    bounce: 0.4,
-                    duration: duration
+                    bounce: bounce,
+                    duration: duration,
+                    delay: delay,
+                }
+            }}
+            viewport={{ once: false, amount: 0 }}
+            className={className}
+        >
+            {children}
+        </motion.div>
+    );
+}
+
+
+
+export function FromRightReveal({ className, children, duration = 1, delay = 0, bounce = 0 }: {
+    className?: string,
+    duration?: number,
+    delay?: number,
+    bounce?: number,
+    children: React.ReactNode,
+}) {
+    return (
+        <motion.div
+            initial={{ x: "100%" }}
+            whileInView={{
+                x: 0,
+                transition: {
+                    type: "spring",
+                    bounce: bounce,
+                    duration: duration,
+                    delay: delay,
+                }
+            }}
+            viewport={{ once: false, amount: 0 }}
+            className={className}
+        >
+            {children}
+        </motion.div>
+    );
+}
+
+
+
+
+export function FromTopReveal({ className, children, duration = 1, delay = 0, bounce = 0 }: {
+    className?: string,
+    duration?: number,
+    delay?: number,
+    bounce?: number,
+    children: React.ReactNode,
+}) {
+    return (
+        <motion.div
+            initial={{ y: "-100%", opacity: 0 }}
+            whileInView={{
+                y: 0,
+                opacity: 1,
+                transition: {
+                    type: "spring",
+                    bounce: bounce,
+                    duration: duration,
+                    delay: delay,
+                }
+            }}
+            viewport={{ once: false, amount: 0 }}
+            className={className}
+        >
+            {children}
+        </motion.div>
+    );
+}
+
+
+
+type BottomRevealPops = DefaultRevealProps & {
+    y?: number | string
+}
+
+
+export function FromBottomReveal(
+    {
+        className, children,
+        duration = 1, delay = 0, bounce = 0,
+        y = "100%"
+    }: BottomRevealPops
+) {
+    return (
+        <motion.div
+            initial={{ y: y, opacity: 0 }}
+            whileInView={{
+                y: 0,
+                opacity: 1,
+                transition: {
+                    type: "spring",
+                    bounce: bounce,
+                    duration: duration,
+                    delay: delay,
                 }
             }}
             viewport={{ once: false, amount: 0 }}

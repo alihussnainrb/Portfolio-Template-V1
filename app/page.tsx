@@ -1,35 +1,45 @@
+'use client'
 import Image from "next/image";
 import { FaCaretRight, FaChevronRight } from "react-icons/fa"
-import { FromLeftReveal, FromRightReveal, PopupReveal } from "./components/RevealComponents";
+import { FadeReveal, FromBottomReveal, FromLeftReveal, FromRightReveal, PopupReveal } from "./components/RevealComponents";
+import { motion } from 'framer-motion'
 
 
 export default function Home() {
   return (
-    <main className='mx-auto max-w-screen-lg'>
+    <main className='mx-auto max-w-screen-lg overflow-hidden'>
       <section className='mt-16'>
-        <p className='text-green-500 font-normal text-lg'>Hi, my name is</p>
-        <h1 className='text-7xl font-bold text-white mt-4'>Ali Hussnain.</h1>
-        <h1 className='text-6xl font-bold text-white/70 mt-2'>I build things for the web.</h1>
-        <div className="mt-10 max-w-2xl">
-          <p className="text-base font-normal text-gray-300/70">
-            &apos;m a web and mobile developer focused on creating seamless experiences that exceed user expectations.
-            With expertise in design and development, I thrive on solving complex challenges and delivering high-quality products.
-            <br /><br />
-            &apos;s work together to bring your digital vision to life!
-          </p>
-        </div>
+        <FromBottomReveal>
+          <p className='text-green-500 font-normal text-lg'>Hi, my name is</p>
+        </FromBottomReveal>
+        <FromBottomReveal>
+          <h1 className='text-7xl font-bold text-white mt-4'>Ali Hussnain.</h1>
+        </FromBottomReveal>
+        <FromBottomReveal>
+          <h1 className='text-6xl font-bold text-white/70 mt-2'>I build things for the web.</h1>
+        </FromBottomReveal>
+        <FromBottomReveal>
+          <div className="mt-10 max-w-2xl">
+            <p className="text-base font-normal text-gray-300/70">
+              I&apos;m a web and mobile developer focused on creating seamless experiences that exceed user expectations.
+              With expertise in design and development, I thrive on solving complex challenges and delivering high-quality products.
+              <br /><br />
+              Let&apos;s work together to bring your digital vision to life!
+            </p>
+          </div>
+        </FromBottomReveal>
         <div className="mt-20">
-          <FromLeftReveal>
+          <FromBottomReveal>
             <a href="/" className="border border-green-500 rounded-md px-6 py-3 md:py-4 text-sm font-medium text-green-500 shadow hover:bg-green-500/20 inline-flex items-center">
               Let&apos;s Work Together <FaChevronRight className="ml-3" />
             </a>
-          </FromLeftReveal>
+          </FromBottomReveal>
         </div>
       </section>
       <section id="about" className='mt-40'>
         <div className="flex max-w-full gap-16">
           <div className="w-auto">
-            <FromLeftReveal duration={.8}>
+            <FromBottomReveal>
               <div className='flex items-center'>
                 <h1 className='font-semibold text-white text-4xl min-w-max'>
                   <span className='text-green-500 mr-4 text-3xl'>01.</span>
@@ -37,8 +47,8 @@ export default function Home() {
                 </h1>
                 <div className='ml-10 w-80 h-[1px] bg-white/30'></div>
               </div>
-            </FromLeftReveal>
-            <FromLeftReveal duration={1.1}>
+            </FromBottomReveal>
+            <FromBottomReveal y={30}>
               <p className='max-w-xl mt-10 text-base font-normal text-gray-300/70'>
                 Hello! My name is <span className="font-bold">Ali</span> and I enjoy creating things that live on the internet.I&apos;m a software engineer specializing in building web and mobile developer with a passion for creating exceptional digital experiences that exceed user expectations. With years of experience in HTML, CSS, React.js, and Next.js, I have developed a deep understanding of how to craft functional, user-friendly, and visually stunning websites that help businesses achieve their goals.
                 <br />
@@ -50,17 +60,17 @@ export default function Home() {
                 <br /><br />
                 If yo&apos;re looking for a highly skilled web and mobile developer who can help you achieve your digital goals, then look no further. I am confident that my skills, expertise, and passion for innovation can help bring your vision to life.
               </p>
-            </FromLeftReveal>
+            </FromBottomReveal>
           </div>
           <div className="w-auto">
             <div className="mt-20 relative group">
-              <FromRightReveal duration={1.5}>
+              <FromBottomReveal delay={.3} y={100}>
                 <Image src={'/images/my-image.jpg'} width="330" height="330" className="object-cover object-center rounded-md aspect-square" alt="" />
                 <div className="absolute top-0 left-0 translate-x-5 translate-y-5 group-hover:translate-x-3 group-hover:translate-y-3 rounded-md border-2 -z-[1] border-green-500 transition w-full aspect-square"></div>
-              </FromRightReveal>
+              </FromBottomReveal>
             </div>
             <div className="px-0 py-16">
-              <FromRightReveal duration={1.5}>
+              <FromBottomReveal y={100}>
                 <ul className="flex gap-2 flex-col">
                   <li className="text-base font-normal list-none text-white/70 flex items-center gap-1">
                     <FaCaretRight className="text-green-500" />
@@ -103,7 +113,7 @@ export default function Home() {
                     <div className='ml-5 w-full h-[1px] bg-white/20'></div>
                   </li>
                 </ul>
-              </FromRightReveal>
+              </FromBottomReveal>
             </div>
           </div>
         </div>
@@ -112,20 +122,18 @@ export default function Home() {
       <section id="work" className='mt-40'>
         <div className="flex align-middle gap-16">
           <div className="w-full">
-            <FromLeftReveal>
-              <div className='flex items-center'>
+            <FromBottomReveal y={100}>
+              <FromBottomReveal className='flex items-center'>
                 <h1 className='font-semibold text-white text-4xl min-w-max'>
                   <span className='text-green-500 mr-4 text-3xl'>03.</span>
                   Some Things I&apos;ve Built
                 </h1>
                 <div className='ml-10 w-80 h-[1px] bg-white/30'></div>
-              </div>
-            </FromLeftReveal>
-            <div className="mt-20 mb-32">
-              <PopupReveal>
+              </FromBottomReveal>
+              <FromBottomReveal y={100} className="mt-20 mb-32">
                 <FeaturedProjectItem />
-              </PopupReveal>
-            </div>
+              </FromBottomReveal>
+            </FromBottomReveal>
           </div>
         </div>
       </section>
