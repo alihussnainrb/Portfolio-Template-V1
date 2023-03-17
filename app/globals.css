@@ -53,10 +53,12 @@ html {
   background-color: var(--light-navy);
 }
 
+.theme-shadow,
 .shadow-theme {
   box-shadow: 0 10px 30px -15px var(--navy-shadow);
 }
 
+.bg-theme-dark,
 body {
   background-color: var(--navy);
 }
@@ -68,7 +70,6 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
-  flex-direction: row-reverse;
 }
 
 .featured-project-item.dir-rtl {
@@ -79,7 +80,7 @@ body {
   width: 55%;
   height: 350px;
   position: relative;
-  border-radius: 8px;
+  border-radius: 5px;
   overflow: hidden;
 }
 
@@ -124,12 +125,13 @@ body {
 
 .featured-project-item.dir-rtl .project-info {
   align-items: flex-end;
+  text-align: end;
 }
 
 
 .featured-project-item .project-info .tagline {
   width: calc(100% + 80px);
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: var(--light-navy);
   margin-right: -80px;
   box-shadow: 0 10px 30px -15px var(--navy-shadow);

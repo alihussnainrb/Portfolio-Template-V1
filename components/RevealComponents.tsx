@@ -82,15 +82,16 @@ export function FromLeftReveal({ className, children, duration = 1, delay = 0, b
 }) {
     return (
         <motion.div
-            initial={{ x: "-100%" }}
+            initial={{ x: "-100%", opacity: 0 }}
             whileInView={{
                 x: 0,
+                opacity: 1,
                 transition: {
                     type: "spring",
                     bounce: bounce,
                     duration: duration,
                     delay: delay,
-                }
+                },
             }}
             viewport={{ once: false, amount: 0 }}
             className={className}
@@ -111,9 +112,10 @@ export function FromRightReveal({ className, children, duration = 1, delay = 0, 
 }) {
     return (
         <motion.div
-            initial={{ x: "100%" }}
+            initial={{ x: "100%", opacity: 0 }}
             whileInView={{
                 x: 0,
+                opacity: 1,
                 transition: {
                     type: "spring",
                     bounce: bounce,
