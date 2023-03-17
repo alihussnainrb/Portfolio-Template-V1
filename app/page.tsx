@@ -142,7 +142,7 @@ function ExperienceSection() {
           <div className='flex items-center'>
             <h1 className='font-semibold text-white text-4xl min-w-max'>
               <span className='text-green-500 mr-4 text-3xl'>02.</span>
-              Where I've Worked
+              Where I&apos;ve Worked
             </h1>
             <div className='ml-10 w-80 h-[1px] bg-white/30'></div>
           </div>
@@ -152,7 +152,7 @@ function ExperienceSection() {
             <nav className="flex flex-col border-l-2 border-white/30 text-sm font-medium">
               {
                 tabs.map((tab, index) => (
-                  <a onClick={() => setCurrentTabIndex(index)}
+                  <a key={tab} onClick={() => setCurrentTabIndex(index)}
                     className={`-ml-0.5 border-l-2 text-base 
                     border-current py-2.5 min-w-max px-6
                      ${currentTabIndex === index ? "text-green-500" : "text-white/40"}
