@@ -7,7 +7,7 @@ type Props = {}
 export default function Header({ }: Props) {
     return (
         <header aria-label="Site Header" className='pt-4'>
-            <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto px-4 sm:px-6 lg:px-20">
                 <div className="flex h-16 items-center justify-between">
                     <FromTopReveal>
                         <a className="block text-green-500 font-extrabold text-3xl" href="/">
