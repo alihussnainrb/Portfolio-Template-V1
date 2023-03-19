@@ -17,43 +17,49 @@ export function ContactSection() {
             </h1>
           </div>
         </FromBottomReveal>
-        <div className="flex mt-32 gap-8">
-          <div className={"w-96 bg-theme-light rotate-12 rounded px-5 py-8 cursor-pointer h-full transition duration-300 hover:-translate-y-5 "}>
-            <div className="flex justify-center items-center">
-              <div className="p-8 rounded-full bg-green-500/20">
-                <FaEnvelope className="text-green-500 font-normal text-4xl" />
+        <div className="grid grid-cols-3 mt-32 gap-8">
+          <FromBottomReveal delay={0}>
+            <div className={"bg-theme-light rotate-12 rounded px-5 py-8 cursor-pointer h-full transition duration-300 hover:-translate-y-5 "}>
+              <div className="flex justify-center items-center">
+                <div className="p-8 rounded-full bg-green-500/5">
+                  <FaEnvelope className="text-green-500 font-normal text-4xl" />
+                </div>
+              </div>
+              <div className='mt-8 text-center'>
+                <p className="text-gray-300/80 text-base font-normal">
+                  alihussnainrrb@gmail.com
+                </p>
               </div>
             </div>
-            <div className='mt-8 text-center'>
-              <p className="text-gray-300/80 text-base font-normal">
-                alihussnainrrb@gmail.com
-              </p>
-            </div>
-          </div>
-          <div className={"w-96 bg-theme-light rotate-12 rounded px-5 py-8 cursor-pointer h-full transition duration-300 hover:-translate-y-5 "}>
-            <div className="flex justify-center items-center">
-              <div className="p-8 rounded-full bg-green-500/20">
-                <FaPhone className="text-green-500 font-normal text-4xl" />
+          </FromBottomReveal>
+          <FromBottomReveal delay={0.2}>
+            <div className={"bg-theme-light rotate-12 rounded px-5 py-8 cursor-pointer h-full transition duration-300 hover:-translate-y-5 "}>
+              <div className="flex justify-center items-center">
+                <div className="p-8 rounded-full bg-green-500/5">
+                  <FaPhone className="text-green-500 font-normal text-4xl" />
+                </div>
+              </div>
+              <div className='mt-8 text-center'>
+                <p className="text-gray-300/80 text-base font-normal">
+                  +92 343 5206962
+                </p>
               </div>
             </div>
-            <div className='mt-8 text-center'>
-              <p className="text-gray-300/80 text-base font-normal">
-                +92 343 5206962
-              </p>
-            </div>
-          </div>
-          <div className={"w-96 bg-theme-light rotate-12 rounded px-5 py-8 cursor-pointer h-full transition duration-300 hover:-translate-y-5 "}>
-            <div className="flex justify-center items-center">
-              <div className="p-8 rounded-full bg-green-500/20">
-                <FaSkype className="text-green-500 font-normal text-4xl" />
+          </FromBottomReveal>
+          <FromBottomReveal delay={0.4}>
+            <div className={"bg-theme-light rotate-12 rounded px-5 py-8 cursor-pointer h-full transition duration-300 hover:-translate-y-5 "}>
+              <div className="flex justify-center items-center">
+                <div className="p-8 rounded-full bg-green-500/5">
+                  <FaSkype className="text-green-500 font-normal text-4xl" />
+                </div>
+              </div>
+              <div className='mt-8 text-center'>
+                <p className="text-gray-300/80 text-base font-normal">
+                  Skype ID
+                </p>
               </div>
             </div>
-            <div className='mt-8 text-center'>
-              <p className="text-gray-300/80 text-base font-normal">
-                Skype ID
-              </p>
-            </div>
-          </div>
+          </FromBottomReveal>
         </div>
         <div className="mt-32 relative">
           <div className="max-w-screen-lg w-full absolute -right-10 " style={{ zIndex: -1 }}>
