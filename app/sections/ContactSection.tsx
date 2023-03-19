@@ -1,11 +1,13 @@
 'use client';
 import { FromBottomReveal, FromLeftReveal, FromRightReveal } from "@/shared_utils/RevealComponents";
 import { Player } from "@lottiefiles/react-lottie-player";
+import Link from "next/link";
+import { FaEnvelope, FaPhone, FaSkype } from "react-icons/fa";
 
 export function ContactSection() {
 
   return (
-    <section id="contact" className={'mt-48 pb-10 mx-auto max-w-screen-xl'}>
+    <section id="contact" className={'mt-48 pb-10 px-16'}>
       <div>
         <FromBottomReveal>
           <div className='flex flex-col justify-center items-center'>
@@ -15,7 +17,45 @@ export function ContactSection() {
             </h1>
           </div>
         </FromBottomReveal>
-        <div className="mt-20 relative px-16">
+        <div className="flex mt-32 gap-8">
+          <div className={"w-96 bg-theme-light rotate-12 rounded px-5 py-8 cursor-pointer h-full transition duration-300 hover:-translate-y-5 "}>
+            <div className="flex justify-center items-center">
+              <div className="p-8 rounded-full bg-green-500/20">
+                <FaEnvelope className="text-green-500 font-normal text-4xl" />
+              </div>
+            </div>
+            <div className='mt-8 text-center'>
+              <p className="text-gray-300/80 text-base font-normal">
+                alihussnainrrb@gmail.com
+              </p>
+            </div>
+          </div>
+          <div className={"w-96 bg-theme-light rotate-12 rounded px-5 py-8 cursor-pointer h-full transition duration-300 hover:-translate-y-5 "}>
+            <div className="flex justify-center items-center">
+              <div className="p-8 rounded-full bg-green-500/20">
+                <FaPhone className="text-green-500 font-normal text-4xl" />
+              </div>
+            </div>
+            <div className='mt-8 text-center'>
+              <p className="text-gray-300/80 text-base font-normal">
+                +92 343 5206962
+              </p>
+            </div>
+          </div>
+          <div className={"w-96 bg-theme-light rotate-12 rounded px-5 py-8 cursor-pointer h-full transition duration-300 hover:-translate-y-5 "}>
+            <div className="flex justify-center items-center">
+              <div className="p-8 rounded-full bg-green-500/20">
+                <FaSkype className="text-green-500 font-normal text-4xl" />
+              </div>
+            </div>
+            <div className='mt-8 text-center'>
+              <p className="text-gray-300/80 text-base font-normal">
+                Skype ID
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="mt-32 relative">
           <div className="max-w-screen-lg w-full absolute -right-10 " style={{ zIndex: -1 }}>
             <Player src={"/lottie/contact.json"} autoplay loop controls={false}
               style={{ width: "100%", height: "auto", objectFit: "cover", objectPosition: "center" }} />
@@ -25,7 +65,7 @@ export function ContactSection() {
               <div className="px-8 py-5 bg-theme-light rounded theme-shadow">
                 <div className="text-center mb-20">
                   <h3 className="text-4xl font-bold text-white">Leave A Message</h3>
-                  <p className="text-sm text-white/50 font-normal">( I will be in touch with you as soon as possible. )</p>
+                  <p className="text-sm text-white/50 font-normal mt-2">( I will be in touch with you as soon as possible. )</p>
                 </div>
                 <form action="#" className="w-full">
                   <div className="mb-6">
@@ -50,3 +90,23 @@ export function ContactSection() {
     </section>
   );
 }
+
+
+
+function ContactInfoItem() {
+  return (
+    <div className={"w-96 bg-theme-light rotate-12 rounded px-5 py-8 cursor-pointer h-full transition hover:-translate-y-3 "}>
+      <div className="flex justify-center items-center">
+        <div className="p-8 rounded-full bg-green-500/20">
+          <FaEnvelope className="text-green-500 font-normal text-4xl" />
+        </div>
+      </div>
+      <div className='mt-8 text-center'>
+        <p className="text-gray-300/80 text-base font-normal mt-4">
+          alihussnainrrb@gmail.com
+        </p>
+      </div>
+    </div>
+  );
+}
+
