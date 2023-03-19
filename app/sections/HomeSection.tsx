@@ -10,13 +10,13 @@ export function HomeSection() {
       <div>
         <div>
           <FromBottomReveal>
-            <p className='text-green-500 font-normal text-lg'>Hi, my name is</p>
+            <p className='text-green-500 font-medium text-base'>Hi, my name is</p>
           </FromBottomReveal>
           <FromBottomReveal>
-            <h1 className='text-7xl font-bold text-white mt-2'>Ali Hussnain.</h1>
+            <h1 className='text-7xl font-extrabold text-white mt-2'>Ali Hussnain.</h1>
           </FromBottomReveal>
           <FromBottomReveal>
-            <h1 className="text-6xl font-bold text-gray-400 mt-2">
+            <h1 className="text-5xl font-bold text-gray-400 mt-2">
               <Typewriter
                 options={{
                   strings: [

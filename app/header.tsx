@@ -14,7 +14,7 @@ export default function Header({ }: Props) {
                             {/* <span className='text-white/80'>{"<"}</span>
                             A<span className='text-white/80'>{" / "}</span>H
                             <span className='text-white/80'>{">"}</span> */}
-                            <Image src="/icons/logo.svg" height={40} width={80} alt="" />
+                            <Image src="/icons/logo.svg" height={60} width={60} alt="" />
                         </a>
                     </FromTopReveal>
 
