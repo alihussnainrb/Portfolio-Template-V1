@@ -13,7 +13,7 @@ type DefaultRevealProps = {
 }
 
 
-export function PopupReveal({ className, children, duration = 1, delay = 0, bounce = 0 }: {
+export function PopupReveal({ className, children, duration = 1, delay = 0, bounce = 0.4 }: {
     className?: string,
     duration?: number,
     delay?: number,
@@ -32,7 +32,7 @@ export function PopupReveal({ className, children, duration = 1, delay = 0, boun
                     delay: delay,
                 }
             }}
-            viewport={{ once: false, amount: 0 }}
+            viewport={{ once: true, amount: 0 }}
             className={className}
         >
             {children}
@@ -43,7 +43,7 @@ export function PopupReveal({ className, children, duration = 1, delay = 0, boun
 
 
 
-export function FadeReveal({ className, children, duration = 1, delay = 0, bounce = 0 }: {
+export function FadeReveal({ className, children, duration = 1, delay = 0, bounce = 0.4 }: {
     className?: string,
     duration?: number,
     delay?: number,
@@ -63,7 +63,7 @@ export function FadeReveal({ className, children, duration = 1, delay = 0, bounc
                     delay: delay,
                 }
             }}
-            viewport={{ once: false, amount: 0 }}
+            viewport={{ once: true, amount: 0 }}
             className={className}
         >
             {children}
@@ -73,7 +73,7 @@ export function FadeReveal({ className, children, duration = 1, delay = 0, bounc
 
 
 
-export function FromLeftReveal({ className, children, duration = 1, delay = 0, bounce = 0 }: {
+export function FromLeftReveal({ className, children, duration = 1, delay = 0, bounce = 0.4 }: {
     className?: string,
     duration?: number,
     delay?: number,
@@ -93,7 +93,7 @@ export function FromLeftReveal({ className, children, duration = 1, delay = 0, b
                     delay: delay,
                 },
             }}
-            viewport={{ once: false, amount: 0 }}
+            viewport={{ once: true, amount: 0 }}
             className={className}
         >
             {children}
@@ -103,7 +103,7 @@ export function FromLeftReveal({ className, children, duration = 1, delay = 0, b
 
 
 
-export function FromRightReveal({ className, children, duration = 1, delay = 0, bounce = 0 }: {
+export function FromRightReveal({ className, children, duration = 1, delay = 0, bounce = 0.4 }: {
     className?: string,
     duration?: number,
     delay?: number,
@@ -123,7 +123,7 @@ export function FromRightReveal({ className, children, duration = 1, delay = 0, 
                     delay: delay,
                 }
             }}
-            viewport={{ once: false, amount: 0 }}
+            viewport={{ once: true, amount: 0 }}
             className={className}
         >
             {children}
@@ -134,7 +134,7 @@ export function FromRightReveal({ className, children, duration = 1, delay = 0, 
 
 
 
-export function FromTopReveal({ className, children, duration = 1, delay = 0, bounce = 0 }: {
+export function FromTopReveal({ className, children, duration = 1, delay = 0, bounce = 0.4 }: {
     className?: string,
     duration?: number,
     delay?: number,
@@ -154,7 +154,7 @@ export function FromTopReveal({ className, children, duration = 1, delay = 0, bo
                     delay: delay,
                 }
             }}
-            viewport={{ once: false, amount: 0 }}
+            viewport={{ once: true, amount: 0 }}
             className={className}
         >
             {children}
@@ -172,7 +172,7 @@ type BottomRevealPops = DefaultRevealProps & {
 export function FromBottomReveal(
     {
         className, children,
-        duration = 1, delay = 0, bounce = 0,
+        duration = 1, delay = 0, bounce = 0.4,
         y = "100%"
     }: BottomRevealPops
 ) {
@@ -189,7 +189,7 @@ export function FromBottomReveal(
                     delay: delay,
                 }
             }}
-            viewport={{ once: false, amount: 0 }}
+            viewport={{ once: true, amount: 0 }}
             className={className}
         >
             {children}

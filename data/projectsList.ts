@@ -1,0 +1,110 @@
+
+export type Project = {
+    id: string,
+    name: string,
+    description: string,
+    tags: string[],
+    github: string,
+    featured: boolean
+}
+
+const ProjectsList: Project[] = [
+    {
+        id: "whatsapp-chatbot",
+        name: "WhatsApp Chatbot",
+        description: "A minimal chatbot that uses WhatsApp Business API and provide the full whatsapp functionality, Additionaly it provides automation tools like auto reply (based on previous chat), scheduling messages and some other functions that whatsapp natively do not provide.",
+        featured: true,
+        tags: ["VS Code", "Next Js", "WhatsApp Business API"],
+        github: "",
+    },
+    {
+        id: "whatsapp-chatbot",
+        name: "WhatsApp Chatbot",
+        description: "A minimal chatbot that uses WhatsApp Business API and provide the full whatsapp functionality, Additionaly it provides automation tools like auto reply (based on previous chat), scheduling messages and some other functions that whatsapp natively do not provide.",
+        featured: true,
+        tags: ["VS Code", "Next Js", "WhatsApp Business API"],
+        github: "",
+    },
+    {
+        id: "whatsapp-chatbot",
+        name: "WhatsApp Chatbot",
+        description: "A minimal chatbot that uses WhatsApp Business API and provide the full whatsapp functionality, Additionaly it provides automation tools like auto reply (based on previous chat), scheduling messages and some other functions that whatsapp natively do not provide.",
+        featured: true,
+        tags: ["VS Code", "Next Js", "WhatsApp Business API"],
+        github: "",
+    },
+    {
+        id: "whatsapp-chatbot",
+        name: "WhatsApp Chatbot",
+        description: "A minimal chatbot that uses WhatsApp Business API and provide the full whatsapp functionality, Additionaly it provides automation tools like auto reply (based on previous chat), scheduling messages and some other functions that whatsapp natively do not provide.",
+        featured: false,
+        tags: ["VS Code", "Next Js", "WhatsApp Business API"],
+        github: "",
+    },
+    {
+        id: "whatsapp-chatbot",
+        name: "WhatsApp Chatbot",
+        description: "A minimal chatbot that uses WhatsApp Business API and provide the full whatsapp functionality, Additionaly it provides automation tools like auto reply (based on previous chat), scheduling messages and some other functions that whatsapp natively do not provide.",
+        featured: false,
+        tags: ["VS Code", "Next Js", "WhatsApp Business API"],
+        github: "",
+    },
+    {
+        id: "whatsapp-chatbot",
+        name: "WhatsApp Chatbot",
+        description: "A minimal chatbot that uses WhatsApp Business API and provide the full whatsapp functionality, Additionaly it provides automation tools like auto reply (based on previous chat), scheduling messages and some other functions that whatsapp natively do not provide.",
+        featured: false,
+        tags: ["VS Code", "Next Js", "WhatsApp Business API"],
+        github: "",
+    },
+    {
+        id: "whatsapp-chatbot",
+        name: "WhatsApp Chatbot",
+        description: "A minimal chatbot that uses WhatsApp Business API and provide the full whatsapp functionality, Additionaly it provides automation tools like auto reply (based on previous chat), scheduling messages and some other functions that whatsapp natively do not provide.",
+        featured: false,
+        tags: ["VS Code", "Next Js", "WhatsApp Business API"],
+        github: "",
+    },
+    {
+        id: "whatsapp-chatbot",
+        name: "WhatsApp Chatbot",
+        description: "A minimal chatbot that uses WhatsApp Business API and provide the full whatsapp functionality, Additionaly it provides automation tools like auto reply (based on previous chat), scheduling messages and some other functions that whatsapp natively do not provide.",
+        featured: false,
+        tags: ["VS Code", "Next Js", "WhatsApp Business API"],
+        github: "",
+    },
+    {
+        id: "whatsapp-chatbot",
+        name: "WhatsApp Chatbot",
+        description: "A minimal chatbot that uses WhatsApp Business API and provide the full whatsapp functionality, Additionaly it provides automation tools like auto reply (based on previous chat), scheduling messages and some other functions that whatsapp natively do not provide.",
+        featured: false,
+        tags: ["VS Code", "Next Js", "WhatsApp Business API"],
+        github: "",
+    },
+    {
+        id: "whatsapp-chatbot",
+        name: "WhatsApp Chatbot",
+        description: "A minimal chatbot that uses WhatsApp Business API and provide the full whatsapp functionality, Additionaly it provides automation tools like auto reply (based on previous chat), scheduling messages and some other functions that whatsapp natively do not provide.",
+        featured: false,
+        tags: ["VS Code", "Next Js", "WhatsApp Business API"],
+        github: "",
+    },
+    {
+        id: "whatsapp-chatbot",
+        name: "WhatsApp Chatbot",
+        description: "A minimal chatbot that uses WhatsApp Business API and provide the full whatsapp functionality, Additionaly it provides automation tools like auto reply (based on previous chat), scheduling messages and some other functions that whatsapp natively do not provide.",
+        featured: false,
+        tags: ["VS Code", "Next Js", "WhatsApp Business API"],
+        github: "",
+    },
+    {
+        id: "whatsapp-chatbot",
+        name: "WhatsApp Chatbot",
+        description: "A minimal chatbot that uses WhatsApp Business API and provide the full whatsapp functionality, Additionaly it provides automation tools like auto reply (based on previous chat), scheduling messages and some other functions that whatsapp natively do not provide.",
+        featured: false,
+        tags: ["VS Code", "Next Js", "WhatsApp Business API"],
+        github: "",
+    },
+]
+
+export default ProjectsList;

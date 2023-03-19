@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import { FromTopReveal } from '../components/RevealComponents'
+import { FromTopReveal } from '../shared_utils/RevealComponents'
 
 type Props = {}
 
@@ -10,8 +10,11 @@ export default function Header({ }: Props) {
             <div className="mx-auto px-4 sm:px-6 lg:px-20">
                 <div className="flex h-16 items-center justify-between">
                     <FromTopReveal>
-                        <a className="block text-green-500 font-extrabold text-3xl" href="/">
-                            <span className='text-white/80'>A</span>H
+                        <a className="block text-green-500 font-bold text-3xl" href="/">
+                            {/* <span className='text-white/80'>{"<"}</span>
+                            A<span className='text-white/80'>{" / "}</span>H
+                            <span className='text-white/80'>{">"}</span> */}
+                            <Image src="/icons/logo.svg" height={40} width={80} alt="" />
                         </a>
                     </FromTopReveal>
 
