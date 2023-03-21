@@ -50,7 +50,7 @@ export function WorkSection() {
               return (
                 <div key={index}>
                   <FromBottomReveal y={200} delay={Math.floor(index % 3) * 0.2}>
-                    <ProjectItem project={project} className="w-full rotate-6" />
+                    <ProjectItem project={project} className="w-full rotate-2" />
                   </FromBottomReveal>
                 </div>
               )
