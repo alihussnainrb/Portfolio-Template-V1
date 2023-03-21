@@ -1,7 +1,6 @@
 'use client';
-import { FromBottomReveal, FromLeftReveal, FromRightReveal } from "@/shared_utils/RevealComponents";
+import { FromBottomReveal, FromLeftReveal } from "@/shared_utils/RevealComponents";
 import { Player } from "@lottiefiles/react-lottie-player";
-import Link from "next/link";
 import { FaEnvelope, FaPhone, FaSkype } from "react-icons/fa";
 
 export function ContactSection() {

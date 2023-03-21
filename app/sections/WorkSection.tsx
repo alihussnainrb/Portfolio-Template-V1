@@ -41,7 +41,7 @@ export function WorkSection() {
             <h1 className='font-extrabold text-white text-3xl'>
               Other Noteworthy Projects
             </h1>
-            <Link href={"/projects"} className='decorated font-medium mt-2 text-green-500 text-base'>View All Projects</Link>
+            <a href={"/projects"} className='decorated font-medium mt-2 text-green-500 text-base'>View All Projects</a>
           </div>
         </FromBottomReveal>
         <div className="grid grid-cols-3 mt-24 gap-6">
@@ -61,9 +61,9 @@ export function WorkSection() {
           <button type="button" className="border border-green-500 rounded-md px-6 py-3 text-sm font-medium text-green-500 shadow bg-green-500/5 hover:bg-green-500/20 inline-flex items-center">
             View More
           </button>
-          <Link href={"/projects"} className="border border-green-500 rounded-md px-6 py-3 text-sm font-medium text-green-500 shadow bg-green-500/5 hover:bg-green-500/20 inline-flex items-center">
+          <a href={"/projects"} className="border border-green-500 rounded-md px-6 py-3 text-sm font-medium text-green-500 shadow bg-green-500/5 hover:bg-green-500/20 inline-flex items-center">
             Visit Projects Page
-          </Link>
+          </a>
         </div>
       </div>
     </section>
