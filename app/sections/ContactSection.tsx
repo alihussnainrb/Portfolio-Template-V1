@@ -18,10 +18,10 @@ export function ContactSection() {
         </FromBottomReveal>
         <div className="grid grid-cols-3 mt-32 gap-8">
           <FromBottomReveal delay={0}>
-            <div className={"bg-slate-400 rounded px-5 py-8 cursor-pointer h-full transition duration-300 hover:-translate-y-5 "}>
+            <div className={"bg-theme-light rounded px-5 py-8 cursor-pointer h-full transition duration-300 hover:-translate-y-5 "}>
               <div className="flex justify-center items-center">
                 <div className="p-8 rounded-full bg-green-500/5">
-                  <FaEnvelope className="text-white font-normal text-4xl" />
+                  <FaEnvelope className="text-green-500 font-normal text-4xl" />
                 </div>
               </div>
               <div className='mt-8 text-center'>
@@ -32,10 +32,10 @@ export function ContactSection() {
             </div>
           </FromBottomReveal>
           <FromBottomReveal delay={0.2}>
-            <div className={"bg-green-400 rounded px-5 py-8 cursor-pointer h-full transition duration-300 hover:-translate-y-5 "}>
+            <div className={"bg-theme-light rounded px-5 py-8 cursor-pointer h-full transition duration-300 hover:-translate-y-5 "}>
               <div className="flex justify-center items-center">
                 <div className="p-8 rounded-full bg-green-500/5">
-                  <FaPhone className="text-white font-normal text-4xl" />
+                  <FaPhone className="text-green-500 font-normal text-4xl" />
                 </div>
               </div>
               <div className='mt-8 text-center'>
@@ -46,10 +46,10 @@ export function ContactSection() {
             </div>
           </FromBottomReveal>
           <FromBottomReveal delay={0.4}>
-            <div className={"bg-green-400 rounded px-5 py-8 cursor-pointer h-full transition duration-300 hover:-translate-y-5 "}>
+            <div className={"bg-theme-light rounded px-5 py-8 cursor-pointer h-full transition duration-300 hover:-translate-y-5 "}>
               <div className="flex justify-center items-center">
                 <div className="p-8 rounded-full bg-green-500/5">
-                  <FaSkype className="text-white font-normal text-4xl" />
+                  <FaSkype className="text-green-500 font-normal text-4xl" />
                 </div>
               </div>
               <div className='mt-8 text-center'>
