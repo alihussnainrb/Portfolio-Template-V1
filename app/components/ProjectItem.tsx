@@ -1,7 +1,3 @@
-
-
-
-'use client';
 import { FaGithub, FaRegFolder } from 'react-icons/fa';
 import { FiExternalLink } from 'react-icons/fi';
 import Link from "next/link";

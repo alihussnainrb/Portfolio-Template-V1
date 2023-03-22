@@ -1,5 +1,4 @@
-'use client';
-import { Project } from "@/data/projectsList";
+import type { Project } from "@/data/projectsList";
 import { FromBottomReveal } from "@/shared_utils/RevealComponents";
 import { FeaturedProjectItem } from "../components/FeaturedProjectItem";
 import { ProjectItem } from "../components/ProjectItem";

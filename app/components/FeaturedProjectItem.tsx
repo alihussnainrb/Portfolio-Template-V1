@@ -1,4 +1,3 @@
-'use client';
 import { type Project } from "@/data/projectsList";
 import Image from "next/image";
 
