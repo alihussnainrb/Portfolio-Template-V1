@@ -185,7 +185,7 @@ export function FromBottomReveal(
 ) {
     return (
         <motion.div
-            initial={{ y: y, opacity: 0, scale: 0.9 }}
+            initial={{ y: y, opacity: 0, scale: 1 }}
             whileInView={{
                 y: 0,
                 opacity: 1,
