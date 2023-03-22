@@ -1,3 +1,4 @@
+'use client';
 import type { Project } from "@/data/projectsList";
 import { FromBottomReveal } from "@/shared_utils/RevealComponents";
 import { FeaturedProjectItem } from "../components/FeaturedProjectItem";

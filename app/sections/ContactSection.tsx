@@ -1,3 +1,4 @@
+'use client';
 import { FromBottomReveal, FromLeftReveal } from "@/shared_utils/RevealComponents";
 import { Player } from "@lottiefiles/react-lottie-player";
 import { FaEnvelope, FaPhone, FaSkype } from "react-icons/fa";

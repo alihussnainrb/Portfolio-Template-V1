@@ -1,3 +1,4 @@
+'use client';
 import { FaChevronRight } from "react-icons/fa";
 import { FromBottomReveal } from "@/shared_utils/RevealComponents";
 import { Player } from "@lottiefiles/react-lottie-player";
