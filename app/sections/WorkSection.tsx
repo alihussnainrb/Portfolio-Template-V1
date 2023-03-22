@@ -1,12 +1,19 @@
 'use client';
-import ProjectsList from "@/data/projectsList";
+import { Project } from "@/data/projectsList";
 import { FromBottomReveal } from "@/shared_utils/RevealComponents";
-import Link from "next/link";
 import { FeaturedProjectItem } from "../components/FeaturedProjectItem";
 import { ProjectItem } from "../components/ProjectItem";
 
 
-export function WorkSection() {
+
+
+
+type Props = {
+  featuredProjects: Project[],
+  projects: Project[]
+}
+
+export default function WorkSection({ projects, featuredProjects }: Props) {
   return (
     <section id="work" className='mt-40 px-16'>
       <div className="w-full">
@@ -21,7 +28,7 @@ export function WorkSection() {
           <FromBottomReveal y={100} className="mt-20">
             <div className="flex flex-col gap-32">
               {
-                ProjectsList.filter((project) => project.featured).map((project, index) => {
+                featuredProjects.map((project, index) => {
                   return (
                     <div key={index}>
                       <FromBottomReveal y={200}>
@@ -44,13 +51,13 @@ export function WorkSection() {
             <a href={"/projects"} className='decorated font-medium mt-2 text-green-500 text-base'>View All Projects</a>
           </div>
         </FromBottomReveal>
-        <div className="grid grid-cols-3 mt-24 gap-6">
+        <div className="flex mt-24 gap-6 items-center justify-center">
           {
-            ProjectsList.slice(0, 9).map((project, index) => {
+            projects.map((project, index) => {
               return (
-                <div key={index}>
+                <div key={index} className="w-1/3">
                   <FromBottomReveal y={200} delay={Math.floor(index % 3) * 0.2}>
-                    <ProjectItem project={project} className="w-full rotate-2" />
+                    <ProjectItem project={project} className={"w-full"} />
                   </FromBottomReveal>
                 </div>
               )

@@ -4,7 +4,7 @@ import { FromBottomReveal } from "@/shared_utils/RevealComponents";
 import { Player } from "@lottiefiles/react-lottie-player";
 import Typewriter from 'typewriter-effect';
 
-export function HomeSection() {
+export default function HomeSection() {
   return (
     <section className='mt-16 px-16'>
       <div>

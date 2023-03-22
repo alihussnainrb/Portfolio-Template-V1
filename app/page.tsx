@@ -1,20 +1,27 @@
-'use client'
 import { FaGithub, FaLinkedinIn, FaSkype, FaTwitter } from "react-icons/fa"
-import { ContactSection } from "./sections/ContactSection";
-import { AboutMeSection } from "./sections/AboutMeSection";
-import { HomeSection } from "./sections/HomeSection";
-import { ExperienceSection } from "./sections/ExperienceSection";
-import { WorkSection } from "./sections/WorkSection";
+import dynamic from "next/dynamic";
+import { getFeaturedProjects, getProjects } from "./cms/projects";
 
 
 
-export default function Home() {
+const HomeSection = dynamic(() => import('./sections/HomeSection'))
+const AboutMeSection = dynamic(() => import('./sections/AboutMeSection'))
+const ExperienceSection = dynamic(() => import('./sections/ExperienceSection'))
+const WorkSection = dynamic(() => import('./sections/WorkSection'))
+const ContactSection = dynamic(() => import('./sections/ContactSection'))
+
+
+
+export default async function Home() {
+  const featuredProjects = await getFeaturedProjects();
+  const projects = await getProjects(9);
+
   return (
     <main className='overflow-hidden max-w-screen-xl mx-auto relative'>
       <HomeSection />
       <AboutMeSection />
       <ExperienceSection />
-      <WorkSection />
+      <WorkSection featuredProjects={featuredProjects} projects={projects} />
       <ContactSection />
 
       <div className="fixed bottom-0 z-50 right-10 2xl:right-20">
@@ -25,7 +32,6 @@ export default function Home() {
           </a>
         </div>
       </div>
-      {/* style={{ left: "max(calc(((100vw - 1280px) / 2)), 10px)" }} */}
       <div className="fixed bottom-0 z-50 left-10 2xl:left-20">
         <div className="flex flex-col items-center justify-center gap-8 after:content-[''] after:block after:h-32 after:w-px after:max-w-[1px] after:bg-white/50">
           <div className="flex flex-col justify-center gap-8">
@@ -38,7 +44,6 @@ export default function Home() {
             <a href="https://www.linkedin.com/in/alihussnainrb" target="_blank">
               <FaLinkedinIn className="text-gray-300 cursor-pointer hover:text-green-500 hover:scale-125 transition text-xl" />
             </a>
-            {/* <FaInstagram className="text-gray-300 cursor-pointer hover:text-green-500 hover:scale-110 transition text-xl" /> */}
             <FaSkype className="text-gray-300 cursor-pointer hover:text-green-500 hover:scale-125 transition text-xl" />
           </div>
         </div>
@@ -46,7 +51,6 @@ export default function Home() {
     </main>
   )
 }
-
 
 
 

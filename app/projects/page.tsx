@@ -1,13 +1,14 @@
 'use client'
-import ProjectsList from "@/data/projectsList"
 import { FromBottomReveal } from "@/shared_utils/RevealComponents"
-import Link from "next/link"
 import { FaGithub, FaLinkedinIn, FaSkype, FaTwitter } from "react-icons/fa"
+import { getProjects } from "../cms/projects"
 import { ProjectItem } from "../components/ProjectItem"
 
 
 
-export default function Home() {
+export default async function Progects() {
+  const projects = await getProjects(30);
+
   return (
     <main className='overflow-hidden max-w-screen-xl mx-auto relative'>
       <section className="p-16">
@@ -18,18 +19,13 @@ export default function Home() {
             </h1>
           </div>
         </FromBottomReveal>
-        <div className="grid grid-cols-3 mt-24 gap-6">
+        <div className="flex flex-col mt-24 gap-8">
           {
-            [
-              ...ProjectsList, ...ProjectsList,
-              ...ProjectsList, ...ProjectsList,
-              ...ProjectsList, ...ProjectsList,
-              ...ProjectsList, ...ProjectsList
-            ].map((project, index) => {
+            projects.map((project, index) => {
               return (
-                <div key={index}>
-                  <FromBottomReveal y={200} delay={Math.floor(index % 3) * 0.2}>
-                    <ProjectItem project={project} className="w-full rotate-6" />
+                <div key={index} className="w-full">
+                  <FromBottomReveal y={100} once={false}>
+                    <ProjectItem project={project} className="w-full hover:translate-y-0 hover:scale-95" lgText={true} />
                   </FromBottomReveal>
                 </div>
               )

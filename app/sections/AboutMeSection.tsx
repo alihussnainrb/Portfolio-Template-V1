@@ -3,7 +3,7 @@ import Image from "next/image";
 import { FaCaretRight } from "react-icons/fa";
 import { FromBottomReveal } from "@/shared_utils/RevealComponents";
 
-export function AboutMeSection() {
+export default function AboutMeSection() {
   return (
     <section id="about" className='mt-40 mx-auto max-w-screen-lg px-16'>
       <FromBottomReveal>

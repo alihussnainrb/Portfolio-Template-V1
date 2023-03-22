@@ -3,7 +3,7 @@ import { FaCaretRight } from "react-icons/fa";
 import { FromBottomReveal } from "@/shared_utils/RevealComponents";
 import { useState } from "react";
 
-export function ExperienceSection() {
+export default function ExperienceSection() {
   const tabs = ["Machine Intelligence 6"];
   const [currentTabIndex, setCurrentTabIndex] = useState(0);
 
