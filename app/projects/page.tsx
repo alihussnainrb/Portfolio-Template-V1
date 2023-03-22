@@ -1,8 +1,7 @@
-'use client'
 import { FromBottomReveal } from "@/shared_utils/RevealComponents"
 import { FaGithub, FaLinkedinIn, FaSkype, FaTwitter } from "react-icons/fa"
-import { getProjects } from "../../app/cms/projects"
-import { ProjectItem } from "../../app/components/ProjectItem"
+import { getProjects } from "../cms/projects"
+import { ProjectItem } from "../components/ProjectItem"
 
 
 
