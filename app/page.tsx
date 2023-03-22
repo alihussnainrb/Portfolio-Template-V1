@@ -1,14 +1,18 @@
 import { FaGithub, FaLinkedinIn, FaSkype, FaTwitter } from "react-icons/fa"
-import dynamic from "next/dynamic";
 import { getFeaturedProjects, getProjects } from "./cms/projects";
+import HomeSection from "./sections/HomeSection";
+import AboutMeSection from "./sections/AboutMeSection";
+import ExperienceSection from "./sections/ExperienceSection";
+import WorkSection from "./sections/WorkSection";
+import ContactSection from "./sections/ContactSection";
 
 
 
-const HomeSection = dynamic(() => import('./sections/HomeSection'))
-const AboutMeSection = dynamic(() => import('./sections/AboutMeSection'))
-const ExperienceSection = dynamic(() => import('./sections/ExperienceSection'))
-const WorkSection = dynamic(() => import('./sections/WorkSection'))
-const ContactSection = dynamic(() => import('./sections/ContactSection'))
+// const HomeSection = dynamic(() => import('./sections/HomeSection'))
+// const AboutMeSection = dynamic(() => import('./sections/AboutMeSection'))
+// const ExperienceSection = dynamic(() => import('./sections/ExperienceSection'))
+// const WorkSection = dynamic(() => import('./sections/WorkSection'))
+// const ContactSection = dynamic(() => import('./sections/ContactSection'))
 
 
 
