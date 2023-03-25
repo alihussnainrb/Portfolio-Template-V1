@@ -41,7 +41,7 @@ export function FeaturedProjectItem({
       <div className="img-container h-[350px] relative group rounded-md overflow-hidden shadow-md shadow-green-300/40 transition blur-[1px] hover:blur-0">
         <Image src={"https:" + (project.image ?? "//source.unsplash.com/random/?coding")}
           height="350" width="700" className="object-cover object-center transition duration-1000 group-hover:scale-125" alt="" />
-        <div className="absolute top-0 left-0 bg-green-400/40 group-hover:bg-green-400/0 z-[1] group-hover:border-transparent rounded-md transition w-full h-full"></div>
+        <div className="absolute top-0 left-0 bg-green-400/30 group-hover:bg-green-400/0 z-[1] group-hover:border-transparent rounded-md transition w-full h-full"></div>
       </div>
     </div>
   );

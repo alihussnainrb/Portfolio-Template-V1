@@ -4,6 +4,12 @@ import { getProjects } from "../cms/projects"
 import { ProjectItem } from "../components/ProjectItem"
 
 
+export const metadata = {
+  title: 'Projects | Ali Hussnain',
+  description: '',
+}
+
+
 
 export default async function Progects() {
   const projects = await getProjects(30);
@@ -24,7 +30,7 @@ export default async function Progects() {
               return (
                 <div key={index} className="w-full">
                   <FromBottomReveal y={100} once={false}>
-                    <ProjectItem project={project} className="w-full hover:translate-y-0 hover:scale-95" lgText={true} />
+                    <ProjectItem project={project} variant="large" className="w-full hover:translate-y-0 border border-white/20 hover:bg-white/5" lgText={true} />
                   </FromBottomReveal>
                 </div>
               )

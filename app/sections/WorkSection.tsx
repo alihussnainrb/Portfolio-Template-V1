@@ -51,13 +51,13 @@ export default function WorkSection({ projects, featuredProjects }: Props) {
             <a href={"/projects"} className='decorated font-medium mt-2 text-green-500 text-base'>View All Projects</a>
           </div>
         </FromBottomReveal>
-        <div className="flex mt-24 gap-6 items-center justify-center">
+        <div className="flex mt-24 gap-6 items-stretch justify-center">
           {
             projects.map((project, index) => {
               return (
                 <div key={index} className="w-1/3">
-                  <FromBottomReveal y={200} delay={Math.floor(index % 3) * 0.2}>
-                    <ProjectItem project={project} className={"w-full"} />
+                  <FromBottomReveal className="h-full" y={200} delay={Math.floor(index % 3) * 0.2}>
+                    <ProjectItem project={project} className={"w-full bg-theme-light cursor-pointer"} />
                   </FromBottomReveal>
                 </div>
               )

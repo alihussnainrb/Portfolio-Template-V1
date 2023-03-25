@@ -35,7 +35,6 @@ export async function getProjects(limit: number = 9): Promise<Project[]> {
 
     return items.map((item) => {
         let fields = (item.fields as any)
-        console.log(fields.image.fields.file)
         return {
             id: item.sys.id,
             name: fields.name,

@@ -38,7 +38,7 @@ export default function AboutMeSection() {
               {/* <div className="absolute top-0 left-0 translate-x-5 translate-y-5 group-hover:translate-x-3 group-hover:translate-y-3 rounded-md border-2 -z-[1] border-green-500 transition w-full aspect-square"></div> */}
               <div className="absolute -top-1 -left-1 border-t-4 border-l-4 border-green-500 transition duration-500 group-hover:-translate-x-2 group-hover:-translate-y-2 -z-[1] rounded w-[40px] aspect-square"></div>
               <div className="absolute -bottom-1 -right-1 border-b-4 border-r-4 border-green-500 transition duration-500 group-hover:translate-x-2 group-hover:translate-y-2 -z-[1] rounded w-[40px] aspect-square"></div>
-              <div className="absolute top-0 left-0 bg-green-400/40 group-hover:bg-green-400/0 z-[1] transition duration-500 w-full rounded-tr rounded-bl aspect-square"></div>
+              <div className="absolute top-0 left-0 bg-green-400/30 group-hover:bg-green-400/0 z-[1] transition duration-500 w-full rounded-tr rounded-bl aspect-square"></div>
             </FromBottomReveal>
           </div>
           <div className="px-0 py-16">
