@@ -23,7 +23,7 @@ export default function Header({ }: Props) {
                             <ul className="flex items-center gap-6 text-sm">
                                 <li>
                                     <FromTopReveal duration={.4}>
-                                        <a href="#about" className="text-white transition hover:text-green-500 font-medium">
+                                        <a href="/#about" className="text-white transition hover:text-green-500 font-medium">
                                             <span className='text-green-500 mr-1'>01. </span>
                                             About
                                         </a>
@@ -31,7 +31,7 @@ export default function Header({ }: Props) {
                                 </li>
                                 <li>
                                     <FromTopReveal duration={.4} delay={0.2}>
-                                        <a href="#experience" className="text-white transition hover:text-green-500 font-medium">
+                                        <a href="/#experience" className="text-white transition hover:text-green-500 font-medium">
                                             <span className='text-green-500 mr-1'>02. </span>
                                             Experience
                                         </a>
@@ -39,7 +39,7 @@ export default function Header({ }: Props) {
                                 </li>
                                 <li>
                                     <FromTopReveal duration={.4} delay={0.4}>
-                                        <a href="#work" className="text-white transition hover:text-green-500 font-medium">
+                                        <a href="/#work" className="text-white transition hover:text-green-500 font-medium">
                                             <span className='text-green-500 mr-1'>03. </span>
                                             Work
                                         </a>
@@ -47,7 +47,7 @@ export default function Header({ }: Props) {
                                 </li>
                                 <li>
                                     <FromTopReveal duration={.4} delay={0.6}>
-                                        <a href="#contact" className="text-white transition hover:text-green-500 font-medium">
+                                        <a href="/#contact" className="text-white transition hover:text-green-500 font-medium">
                                             <span className='text-green-500 mr-1'>04. </span>
                                             Contact
                                         </a>

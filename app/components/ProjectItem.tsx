@@ -39,12 +39,18 @@ export function ProjectItem({
                             </a>
                     }
                     <div className="flex gap-5">
-                        <a aria-disabled={project.github === ""} href={project.github}>
-                            <FaGithub className="text-white font-normal text-xl transition hover:text-green-500" />
-                        </a>
-                        <a aria-disabled={project.github === ""} href={project.preview}>
-                            <FiExternalLink className="text-white font-normal text-xl transition hover:text-green-500" />
-                        </a>
+                        {
+                            project.github !== "" &&
+                            <a href={project.github}>
+                                <FaGithub className="text-white font-normal text-xl transition hover:text-green-500" />
+                            </a>
+                        }
+                        {
+                            project.preview !== "" &&
+                            <a href={project.preview}>
+                                <FiExternalLink className="text-white font-normal text-xl transition hover:text-green-500" />
+                            </a>
+                        }
                     </div>
                 </div>
                 <div className='mt-8'>

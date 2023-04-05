@@ -34,7 +34,7 @@ export default function AboutMeSection() {
         <div className="w-[400px]">
           <div className="mt-20 relative group">
             <FromBottomReveal delay={.3} y={100}>
-              <Image src={'/images/my-image.jpg'} width="400" height="400" className="object-cover object-center rounded-tr rounded-bl aspect-square" alt="" />
+              <Image src={'/images/about-img.jpg'} width="400" height="400" className="object-cover object-center rounded-tr rounded-bl aspect-square" alt="" />
               {/* <div className="absolute top-0 left-0 translate-x-5 translate-y-5 group-hover:translate-x-3 group-hover:translate-y-3 rounded-md border-2 -z-[1] border-green-500 transition w-full aspect-square"></div> */}
               <div className="absolute -top-1 -left-1 border-t-4 border-l-4 border-green-500 transition duration-500 group-hover:-translate-x-2 group-hover:-translate-y-2 -z-[1] rounded w-[40px] aspect-square"></div>
               <div className="absolute -bottom-1 -right-1 border-b-4 border-r-4 border-green-500 transition duration-500 group-hover:translate-x-2 group-hover:translate-y-2 -z-[1] rounded w-[40px] aspect-square"></div>
@@ -56,6 +56,16 @@ export default function AboutMeSection() {
                 </li>
                 <li className="text-base font-normal list-none text-white/70 flex items-center gap-1">
                   <FaCaretRight className="text-green-500" />
+                  <span className="ml-1 min-w-max">Tailwind CSS</span>
+                  <div className='ml-5 w-full h-[1px] bg-white/20'></div>
+                </li>
+                <li className="text-base font-normal list-none text-white/70 flex items-center gap-1">
+                  <FaCaretRight className="text-green-500" />
+                  <span className="ml-1 min-w-max">Bootstrap</span>
+                  <div className='ml-5 w-full h-[1px] bg-white/20'></div>
+                </li>
+                <li className="text-base font-normal list-none text-white/70 flex items-center gap-1">
+                  <FaCaretRight className="text-green-500" />
                   <span className="ml-1 min-w-max">Javascript / Typescript</span>
                   <div className='ml-5 w-full h-[1px] bg-white/20'></div>
                 </li>
@@ -71,15 +81,20 @@ export default function AboutMeSection() {
                 </li>
                 <li className="text-base font-normal list-none text-white/70 flex items-center gap-1">
                   <FaCaretRight className="text-green-500" />
-                  <span className="ml-1 min-w-max">Sanity</span>
+                  <span className="ml-1 min-w-max">Node JS</span>
                   <div className='ml-5 w-full h-[1px] bg-white/20'></div>
                 </li>
                 <li className="text-base font-normal list-none text-white/70 flex items-center gap-1">
                   <FaCaretRight className="text-green-500" />
-                  <span className="ml-1 min-w-max">Strapi</span>
+                  <span className="ml-1 min-w-max">Mongodb</span>
                   <div className='ml-5 w-full h-[1px] bg-white/20'></div>
                 </li>
                 <li className="text-base font-normal list-none text-white/70 flex items-center gap-1">
+                  <FaCaretRight className="text-green-500" />
+                  <span className="ml-1 min-w-max">Contentful CMS</span>
+                  <div className='ml-5 w-full h-[1px] bg-white/20'></div>
+                </li>
+                {/* <li className="text-base font-normal list-none text-white/70 flex items-center gap-1">
                   <FaCaretRight className="text-green-500" />
                   <span className="ml-1 min-w-max">Android</span>
                   <div className='ml-5 w-full h-[1px] bg-white/20'></div>
@@ -93,7 +108,7 @@ export default function AboutMeSection() {
                   <FaCaretRight className="text-green-500" />
                   <span className="ml-1 min-w-max">Flutter</span>
                   <div className='ml-5 w-full h-[1px] bg-white/20'></div>
-                </li>
+                </li> */}
               </ul>
             </FromBottomReveal>
           </div>

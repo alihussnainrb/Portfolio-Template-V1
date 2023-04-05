@@ -65,11 +65,11 @@ export default function WorkSection({ projects, featuredProjects }: Props) {
           }
         </div>
         <div className="flex items-center justify-center mt-20 gap-5">
-          <button type="button" className="border border-green-500 rounded-md px-6 py-3 text-sm font-medium text-green-500 shadow bg-green-500/5 hover:bg-green-500/20 inline-flex items-center">
+          {/* <button type="button" className="border border-green-500 rounded-md px-6 py-3 text-sm font-medium text-green-500 shadow bg-green-500/5 hover:bg-green-500/20 inline-flex items-center">
             View More
-          </button>
+          </button> */}
           <a href={"/projects"} className="border border-green-500 rounded-md px-6 py-3 text-sm font-medium text-green-500 shadow bg-green-500/5 hover:bg-green-500/20 inline-flex items-center">
-            Visit Projects Page
+            View All Projects
           </a>
         </div>
       </div>
