@@ -15,7 +15,7 @@ type Props = {
 
 export default function WorkSection({ projects, featuredProjects }: Props) {
   return (
-    <section id="work" className='mt-40 px-16'>
+    <section id="work" className='mt-40 px-5 md:px-10 lg:px-16'>
       <div className="w-full">
         <FromBottomReveal y={100}>
           <FromBottomReveal className='flex items-center'>
@@ -45,7 +45,7 @@ export default function WorkSection({ projects, featuredProjects }: Props) {
       <div className="mt-40">
         <FromBottomReveal>
           <div className='flex flex-col justify-center items-center'>
-            <h2 className='font-extrabold text-white text-3xl'>
+            <h2 className='font-extrabold text-center text-white text-3xl'>
               Other Noteworthy Projects
             </h2>
             <a href={"/projects"} className='decorated font-medium mt-2 text-green-500 text-base'>View All Projects</a>

@@ -27,7 +27,7 @@ export default async function Home() {
       <AboutMeSection />
       <ExperienceSection />
       <WorkSection featuredProjects={featuredProjects} projects={projects} />
-      <TestimonialSection />
+      {/* <TestimonialSection /> */}
       <ContactSection />
 
       <div className="hidden lg:block fixed bottom-0 z-50 right-10 2xl:right-20">
@@ -50,7 +50,9 @@ export default async function Home() {
             <a href="https://www.linkedin.com/in/alihussnainrb" target="_blank">
               <FaLinkedinIn className="text-gray-300 cursor-pointer hover:text-green-500 hover:scale-125 transition text-xl" />
             </a>
-            <FaSkype className="text-gray-300 cursor-pointer hover:text-green-500 hover:scale-125 transition text-xl" />
+            <a href="skype:live:.cid.3d0c704665c411bb?chat">
+              <FaSkype className="text-gray-300 cursor-pointer hover:text-green-500 hover:scale-125 transition text-xl" />
+            </a>
           </div>
         </div>
       </div>

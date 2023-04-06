@@ -15,15 +15,15 @@ function TestimonialSection() {
           <span className="inline-block w-1 h-1 bg-green-500 rounded-full"></span>
         </div>
 
-        <div className="flex items-start max-w-6xl mx-auto mt-16">
-          <button title="left arrow" className="hidden p-2 text-gray-200 transition-colors duration-300 border rounded-full lg:block hover:bg-gray-100/10">
-            <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+        <div className="flex items-center max-w-6xl mx-auto mt-16">
+          <button title="left arrow" className="mb-32 p-2 text-gray-200 transition-colors duration-300 border rounded-full lg:block hover:bg-gray-100/10">
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
             </svg>
           </button>
 
           <div>
-            <p className="flex items-center text-center text-gray-400 lg:mx-8">
+            <p className="flex items-center text-center text-gray-400 mx-8">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, quam. Odio voluptatem officiis
               eos illo! Pariatur, totam alias. Beatae accusamus earum quos obcaecati minima molestias. Possimus
               minima dolores itaque! Esse! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptates
@@ -33,7 +33,6 @@ function TestimonialSection() {
 
             <div className="flex flex-col items-center justify-center mt-8">
               <Image className="object-cover rounded-full w-14 h-14" src="https://images.unsplash.com/photo-1499470932971-a90681ce8530?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" width={700} height={500} alt="" />
-
               <div className="mt-4 text-center">
                 <h4 className="font-semibold text-lg text-white">Client Name</h4>
                 <span className="text-sm text-white/70">Marketer</span>
@@ -41,9 +40,9 @@ function TestimonialSection() {
             </div>
           </div>
 
-          <button title="right arrow" className="hidden p-2 text-gray-200 transition-colors duration-300 border rounded-full lg:block hover:bg-gray-100/10">
-            <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+          <button title="right arrow" className="mb-32 p-2 text-gray-200 transition-colors duration-300 border rounded-full lg:block hover:bg-gray-100/10">
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
             </svg>
           </button>
         </div>
