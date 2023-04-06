@@ -5,14 +5,14 @@ import { FaEnvelope, FaPhone, FaSkype } from "react-icons/fa";
 export default function ContactSection() {
 
   return (
-    <section id="contact" className={'mt-48 pb-10 px-16'}>
+    <section id="contact" className={'mt-40 pb-10 px-16'}>
       <div>
         <FromBottomReveal>
           <div className='flex flex-col justify-center items-center'>
-            <span className='font-semibold text-green-500 text-base mb-2'>02. What&apos;s Next?</span>
-            <h1 className='font-bold text-white text-5xl'>
+            <h3 className='font-semibold text-green-500 text-base mb-2'>02. What&apos;s Next?</h3>
+            <h2 className='font-bold text-white text-5xl'>
               Get In Touch
-            </h1>
+            </h2>
           </div>
         </FromBottomReveal>
         <div className="grid grid-cols-3 mt-32 gap-8">
@@ -62,7 +62,7 @@ export default function ContactSection() {
         <div className="mt-20 relative flex items-center justify-center">
           <div className="w-full">
             <FromBottomReveal y={150}>
-              <div className="px-8 py-5 border border-white/10 rounded theme-shadow">
+              <div className="px-8 py-5 rounded theme-shadow">
                 <div className="text-center mb-10">
                   <h3 className="text-4xl font-bold text-white">Leave A Message</h3>
                   <p className="text-sm text-white/50 font-normal mt-2">( I will be in touch with you as soon as possible. )</p>

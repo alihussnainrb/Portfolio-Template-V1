@@ -12,10 +12,10 @@ export default function ExperienceSection() {
       <div className="max-w-4xl mx-auto gap-16">
         <FromBottomReveal>
           <div className='flex items-center'>
-            <h1 className='font-semibold text-white text-4xl min-w-max'>
+            <h2 className='font-semibold text-white text-4xl min-w-max'>
               <span className='text-green-500 mr-4 text-3xl'>02.</span>
               Where I&apos;ve Worked
-            </h1>
+            </h2>
             <div className='ml-10 w-80 h-[1px] bg-white/30'></div>
           </div>
         </FromBottomReveal>

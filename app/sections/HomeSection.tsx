@@ -6,17 +6,17 @@ import Typewriter from 'typewriter-effect';
 
 export default function HomeSection() {
   return (
-    <section className='mt-16 px-16'>
-      <div>
+    <section className='mt-16 px-5 md:px-10 lg:px-16'>
+      <div className="flex flex-col gap-10 lg:block">
         <div>
           <FromBottomReveal>
-            <p className='text-green-500 font-medium text-base'>Hi, my name is</p>
+            <p className='text-green-500 font-medium lg:text-sm xl:text-base'>Hi, my name is</p>
           </FromBottomReveal>
           <FromBottomReveal>
-            <h1 className='text-7xl font-extrabold text-white mt-2'>Ali Hussnain.</h1>
+            <h1 className='text-5xl md:text-6xl lg:text-5xl xl:text-7xl font-extrabold text-white mt-2'>Ali Hussnain.</h1>
           </FromBottomReveal>
           <FromBottomReveal>
-            <h1 className="text-5xl font-bold text-gray-400 mt-2">
+            <h2 className="text-3xl md:text-4xl xl:text-5xl font-bold text-gray-400 mt-2">
               <Typewriter
                 options={{
                   strings: [
@@ -27,10 +27,10 @@ export default function HomeSection() {
                   loop: true,
                   deleteSpeed: 10,
                 }} />
-            </h1>
+            </h2>
           </FromBottomReveal>
           <FromBottomReveal>
-            <div className="mt-10 max-w-xl">
+            <div className="mt-10 max-w-2xl lg:max-w-lg xl:max-w-xl">
               <p className="text-base font-normal text-gray-300/70">
                 I&apos;m a web and mobile developer focused on creating seamless experiences that exceed user expectations.
                 With expertise in design and development, I thrive on solving complex challenges and delivering high-quality products.
@@ -47,8 +47,8 @@ export default function HomeSection() {
             </FromBottomReveal>
           </div>
         </div>
-        <div className="w-1/2 absolute top-16 right-0" style={{ zIndex: -1 }}>
-          <Player src={"/lottie/home.json"} autoplay loop controls={false} className="aspect-square" style={{ width: 500, height: 500 }}></Player>
+        <div className="lg:w-1/2 lg:absolute lg:top-16 lg:right-0" style={{ zIndex: -1 }}>
+          <Player src={"/lottie/home.json"} autoplay loop controls={false} className="max-w-full" style={{ width: 500, height: 500 }}></Player>
         </div>
       </div>
     </section>

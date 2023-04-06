@@ -19,10 +19,10 @@ export default function WorkSection({ projects, featuredProjects }: Props) {
       <div className="w-full">
         <FromBottomReveal y={100}>
           <FromBottomReveal className='flex items-center'>
-            <h1 className='font-semibold text-white text-4xl min-w-max'>
+            <h2 className='font-semibold text-white text-4xl min-w-max'>
               <span className='text-green-500 mr-4 text-2xl'>03.</span>
               Some Projects I&apos;ve Built
-            </h1>
+            </h2>
             <div className='ml-10 w-80 h-[1px] bg-white/30'></div>
           </FromBottomReveal>
           <FromBottomReveal y={100} className="mt-20">
@@ -45,9 +45,9 @@ export default function WorkSection({ projects, featuredProjects }: Props) {
       <div className="mt-40">
         <FromBottomReveal>
           <div className='flex flex-col justify-center items-center'>
-            <h1 className='font-extrabold text-white text-3xl'>
+            <h2 className='font-extrabold text-white text-3xl'>
               Other Noteworthy Projects
-            </h1>
+            </h2>
             <a href={"/projects"} className='decorated font-medium mt-2 text-green-500 text-base'>View All Projects</a>
           </div>
         </FromBottomReveal>
