@@ -60,12 +60,12 @@ export default function Header({ }: Props) {
                             <div className="sm:flex sm:gap-4">
                                 <FromTopReveal duration={.4} delay={0.8}>
                                     <a href="/" className="border border-green-500 rounded-md px-4 py-1.5 md:py-2 text-sm font-medium text-green-500 shadow hover:bg-green-500/20">
-                                        Resume
+                                        View Resume
                                     </a>
                                 </FromTopReveal>
                             </div>
 
-                            <div className="block md:hidden">
+                            {/* <div className="block md:hidden">
                                 <button
                                     className="rounded p-2 text-white/80 transition hover:text-white"
                                 >
@@ -84,7 +84,7 @@ export default function Header({ }: Props) {
                                         />
                                     </svg>
                                 </button>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

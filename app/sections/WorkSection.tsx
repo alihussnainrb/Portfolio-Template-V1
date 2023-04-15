@@ -13,22 +13,24 @@ type Props = {
   projects: Project[]
 }
 
-export default function WorkSection({ projects, featuredProjects }: Props) {
+export default function WorkSection({ projects }: Props) {
   return (
     <section id="work" className='mt-40 px-5 md:px-10 lg:px-16'>
       <div className="w-full">
         <FromBottomReveal y={100}>
-          <FromBottomReveal className='flex items-center'>
-            <h2 className='font-semibold text-white text-4xl min-w-max'>
-              <span className='text-green-500 mr-4 text-2xl'>03.</span>
-              Some Projects I&apos;ve Built
-            </h2>
-            <div className='ml-10 w-80 h-[1px] bg-white/30'></div>
+          <FromBottomReveal>
+            <div className="flex items-center">
+              <span className='font-semibold text-green-500 mr-4 text-2xl hidden md:inline-block'>03.</span>
+              <h2 className='font-semibold text-white text-3xl lg:text-4xl'>
+                Some Projects I&apos;ve Built
+              </h2>
+            </div>
+            {/* <div className='ml-10 w-80 h-[1px] hidden lg:block bg-white/30'></div> */}
           </FromBottomReveal>
-          <FromBottomReveal y={100} className="mt-20">
-            <div className="flex flex-col gap-32">
+          <FromBottomReveal y={100} className="mt-10 md:mt-20">
+            <div className="flex flex-col gap-16 lg:gap-32">
               {
-                featuredProjects.map((project, index) => {
+                projects.map((project, index) => {
                   return (
                     <div key={index}>
                       <FromBottomReveal y={200}>
@@ -42,7 +44,7 @@ export default function WorkSection({ projects, featuredProjects }: Props) {
           </FromBottomReveal>
         </FromBottomReveal>
       </div>
-      <div className="mt-40">
+      {/* <div className="mt-40">
         <FromBottomReveal>
           <div className='flex flex-col justify-center items-center'>
             <h2 className='font-extrabold text-center text-white text-3xl'>
@@ -65,14 +67,12 @@ export default function WorkSection({ projects, featuredProjects }: Props) {
           }
         </div>
         <div className="flex items-center justify-center mt-20 gap-5">
-          {/* <button type="button" className="border border-green-500 rounded-md px-6 py-3 text-sm font-medium text-green-500 shadow bg-green-500/5 hover:bg-green-500/20 inline-flex items-center">
-            View More
-          </button> */}
+     
           <a href={"/projects"} className="border border-green-500 rounded-md px-6 py-3 text-sm font-medium text-green-500 shadow bg-green-500/5 hover:bg-green-500/20 inline-flex items-center">
             View All Projects
           </a>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }

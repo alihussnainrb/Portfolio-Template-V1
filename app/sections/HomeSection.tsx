@@ -32,7 +32,7 @@ export default function HomeSection() {
           <FromBottomReveal>
             <div className="mt-10 max-w-2xl lg:max-w-lg xl:max-w-xl">
               <p className="text-base font-normal text-gray-300/70">
-                I&apos;m a web and mobile developer focused on creating seamless experiences that exceed user expectations.
+                I&apos;m a fullstack developer focused on creating seamless experiences that exceed user expectations.
                 With expertise in design and development, I thrive on solving complex challenges and delivering high-quality products.
                 <br /><br />
                 Let&apos;s work together to bring your digital vision to life!

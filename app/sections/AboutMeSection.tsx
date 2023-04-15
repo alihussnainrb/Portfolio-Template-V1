@@ -7,19 +7,19 @@ export default function AboutMeSection() {
   return (
     <section id="about" className='mt-40 mx-auto max-w-screen-lg px-5 md:px-10 lg:px-16'>
       <FromBottomReveal>
-        <div className='flex items-center'>
-          <h2 className='font-semibold text-white text-4xl min-w-max'>
-            <span className='text-green-500 mr-4 text-2xl'>01.</span>
+        <div className="flex items-center">
+          <span className='font-semibold text-green-500 mr-4 text-2xl hidden md:inline-block'>01.</span>
+          <h2 className='font-semibold text-white text-3xl lg:text-4xl'>
             About Me
           </h2>
-          <div className='ml-10 w-80 h-[1px] bg-white/30'></div>
         </div>
+        {/* <div className='ml-10 w-80 h-[1px] hidden lg:block bg-white/30'></div> */}
       </FromBottomReveal>
       <div className="flex max-w-full gap-8 lg:gap-16 flex-col-reverse lg:flex-row">
         <div className="w-auto">
           <FromBottomReveal y={100}>
             <p className='lg:max-w-xl mt-10 text-base font-normal text-gray-300/70'>
-              Hello! My name is <span className="font-bold">Ali</span> and I enjoy creating things that live on the internet.I&apos;m a software engineer specializing in building web and mobile developer with a passion for creating exceptional digital experiences that exceed user expectations. With years of experience in HTML, CSS, React.js, and Next.js, I have developed a deep understanding of how to craft functional, user-friendly, and visually stunning websites that help businesses achieve their goals.
+              Hello! My name is <span className="font-bold">Ali</span> and I enjoy creating things that live on the internet.I&apos;m a fullstack developer with a passion for creating exceptional digital experiences that exceed user expectations. With years of experience in HTML, Styling (CSS/Tailwind/Bootstrap), Reactjs, Nextjs, Nodejs, MongoDB, Firebase flutter and other modern technologies, I have developed a deep understanding of how to craft functional, user-friendly, and visually stunning websites that help businesses achieve their goals.
               <br />
               In addition to web development, I have a strong background in mobile app development, with expertise in both Android Native and Flutter. Whether it&apos;s designing intuitive interfaces, integrating complex features, or optimizing performance, I have the skills to deliver high-quality mobile apps that meet the unique needs of each project.
               <br /><br />
@@ -32,7 +32,7 @@ export default function AboutMeSection() {
           </FromBottomReveal>
         </div>
         <div className="w-full lg:w-[400px]">
-          <div className="mt-20 relative group">
+          <div className="mt-10 md:mt-20 relative group">
             <FromBottomReveal delay={.3} y={100}>
               <Image src={'/images/about-img.jpg'} width="400" height="400" className="object-cover w-full object-center rounded-tr rounded-bl aspect-square" alt="" />
               {/* <div className="absolute top-0 left-0 translate-x-5 translate-y-5 group-hover:translate-x-3 group-hover:translate-y-3 rounded-md border-2 -z-[1] border-green-500 transition w-full aspect-square"></div> */}

@@ -5,7 +5,7 @@ import { FaEnvelope, FaPhone, FaSkype } from "react-icons/fa";
 export default function ContactSection() {
 
   return (
-    <section id="contact" className={'mt-40 pb-10 px-16'}>
+    <section id="contact" className={'mt-40 pb-10 px-5 md:px-10 lg:px-16'}>
       <div>
         <FromBottomReveal>
           <div className='flex flex-col justify-center items-center'>
@@ -78,16 +78,16 @@ export default function ContactSection() {
                     <div className="w-full lg:w-1/2">
                       <div className="mb-6">
                         <label htmlFor="subject" className="block mb-2 text-sm font-nomral text-white/80">Your email address</label>
-                        <input type="email" className="p-3 text-sm font-normal appearance-none border border-white/40 bg-transparent outline-none rounded text-white/80 min-w-full" placeholder="xxxx@yyy.zz" />
+                        <input type="email" className="p-3 text-sm font-normal appearance-none border border-white/20 bg-transparent outline-none rounded text-white/80 min-w-full" placeholder="xxxx@yyy.zz" />
                       </div>
                       <div className="mb-6">
                         <label htmlFor="subject" className="block mb-2 text-sm font-nomral text-white/80">Subject</label>
-                        <input type="email" className="p-3 text-sm font-normal appearance-none border border-white/40 bg-transparent outline-none rounded text-white/80 min-w-full" placeholder="Let me know how can i help you" />
+                        <input type="email" className="p-3 text-sm font-normal appearance-none border border-white/20 bg-transparent outline-none rounded text-white/80 min-w-full" placeholder="Let me know how can i help you" />
                       </div>
                     </div>
                     <div className="mb-6 w-full lg:w-1/2">
                       <label htmlFor="subject" className="block mb-2 text-sm font-nomral text-white/80">Message</label>
-                      <textarea rows={6} className="p-3 text-sm font-normal appearance-none border border-white/40 bg-transparent outline-none rounded text-white/80 min-w-full" placeholder="Leave a comment..."></textarea>
+                      <textarea rows={6} className="p-3 text-sm font-normal appearance-none border border-white/20 bg-transparent outline-none rounded text-white/80 min-w-full" placeholder="Leave a comment..."></textarea>
                     </div>
                   </div>
                   <div className="flex justify-center">

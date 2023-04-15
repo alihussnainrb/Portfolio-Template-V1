@@ -5,20 +5,14 @@ import AboutMeSection from "./sections/AboutMeSection";
 import ExperienceSection from "./sections/ExperienceSection";
 import WorkSection from "./sections/WorkSection";
 import ContactSection from "./sections/ContactSection";
-import TestimonialSection from "./sections/TestimonialSection";
+// import TestimonialSection from "./sections/TestimonialSection";
 
 
-
-// const HomeSection = dynamic(() => import('./sections/HomeSection'))
-// const AboutMeSection = dynamic(() => import('./sections/AboutMeSection'))
-// const ExperienceSection = dynamic(() => import('./sections/ExperienceSection'))
-// const WorkSection = dynamic(() => import('./sections/WorkSection'))
-// const ContactSection = dynamic(() => import('./sections/ContactSection'))
 
 
 
 export default async function Home() {
-  const featuredProjects = await getFeaturedProjects();
+  // const featuredProjects = await getFeaturedProjects();
   const projects = await getProjects(9);
 
   return (
@@ -26,7 +20,7 @@ export default async function Home() {
       <HomeSection />
       <AboutMeSection />
       <ExperienceSection />
-      <WorkSection featuredProjects={featuredProjects} projects={projects} />
+      <WorkSection featuredProjects={[]} projects={projects} />
       {/* <TestimonialSection /> */}
       <ContactSection />
 
