@@ -18,7 +18,7 @@ export default function ContactSection() {
         <div className="grid md:grid-cols-1 lg:grid-cols-3 mt-32 gap-8">
           <FromBottomReveal delay={0.2}>
             <a href="mailto:alihussnainrrb@gmail.com">
-              <div className={"rounded theme-shadow px-5 py-8 cursor-pointer h-full transition duration-300 hover:bg-white/5 border border-white/5"}>
+              <div className={"rounded px-5 py-8 cursor-pointer h-full transition duration-300 hover:bg-white/[3%] border border-white/5"}>
                 <div className="flex justify-center items-center">
                   <div className="p-8 rounded-full bg-green-500/5">
                     <FaEnvelope className="text-green-500 font-normal text-4xl" />
@@ -34,7 +34,7 @@ export default function ContactSection() {
           </FromBottomReveal>
           <FromBottomReveal delay={0}>
             <a href="tel:+923435206962">
-              <div className={"rounded theme-shadow px-5 py-8 cursor-pointer h-full transition duration-300 hover:bg-white/5 border border-white/5"}>
+              <div className={"rounded px-5 py-8 cursor-pointer h-full transition duration-300 hover:bg-white/[3%] border border-white/5"}>
                 <div className="flex justify-center items-center">
                   <div className="p-8 rounded-full bg-green-500/5">
                     <FaPhone className="text-green-500 font-normal text-4xl" />
@@ -50,7 +50,7 @@ export default function ContactSection() {
           </FromBottomReveal>
           <FromBottomReveal delay={0.2}>
             <a href="skype:live:.cid.3d0c704665c411bb?chat">
-              <div className={"rounded theme-shadow px-5 py-8 cursor-pointer h-full transition duration-300 hover:bg-white/5 border border-white/5"}>
+              <div className={"rounded px-5 py-8 cursor-pointer h-full transition duration-300 hover:bg-white/[3%] border border-white/5"}>
                 <div className="flex justify-center items-center">
                   <div className="p-8 rounded-full bg-green-500/5">
                     <FaSkype className="text-green-500 font-normal text-4xl" />
@@ -68,7 +68,7 @@ export default function ContactSection() {
         <div className="mt-20 relative flex items-center justify-center">
           <div className="w-full">
             <FromBottomReveal y={150}>
-              <div className="px-8 py-10 rounded">
+              <div className="lg:px-8 py-10 rounded">
                 <div className="text-center mb-10">
                   <h3 className="text-3xl md:text-4xl font-bold text-white">Leave A Message</h3>
                   <p className="text-sm text-white/50 font-normal mt-2">I will be in touch with you as soon as possible.</p>

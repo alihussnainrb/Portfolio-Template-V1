@@ -17,33 +17,37 @@ export default function WorkSection({ projects }: Props) {
   return (
     <section id="work" className='mt-40 px-5 md:px-10 lg:px-16'>
       <div className="w-full">
-        <FromBottomReveal y={100}>
-          <FromBottomReveal>
-            <div className="flex items-center">
-              <span className='font-semibold text-green-500 mr-4 text-2xl hidden md:inline-block'>03.</span>
-              <h2 className='font-semibold text-white text-3xl lg:text-4xl'>
-                Some Projects I&apos;ve Built
-              </h2>
-            </div>
-            {/* <div className='ml-10 w-80 h-[1px] hidden lg:block bg-white/30'></div> */}
-          </FromBottomReveal>
-          <FromBottomReveal y={100} className="mt-10 md:mt-20">
-            <div className="flex flex-col gap-16 lg:gap-32">
-              {
-                projects.map((project, index) => {
-                  return (
-                    <div key={index}>
-                      <FromBottomReveal y={200}>
-                        <FeaturedProjectItem project={project} rtl={Math.floor(index % 2) === 0} className="w-full" />
-                      </FromBottomReveal>
-                    </div>
-                  )
-                })
-              }
-            </div>
-          </FromBottomReveal>
+        <FromBottomReveal>
+          <div className="flex items-center">
+            <span className='font-semibold text-green-500 mr-4 text-2xl hidden md:inline-block'>03.</span>
+            <h2 className='font-semibold text-white text-3xl lg:text-4xl'>
+              Some Projects I&apos;ve Built
+            </h2>
+          </div>
+          {/* <div className='ml-10 w-80 h-[1px] hidden lg:block bg-white/30'></div> */}
+        </FromBottomReveal>
+        <FromBottomReveal y={100} className="mt-10 md:mt-20">
+          <div className="flex flex-col gap-16 lg:gap-32">
+            {
+              projects.map((project, index) => {
+                return (
+                  <div key={index}>
+                    <FromBottomReveal y={200}>
+                      <FeaturedProjectItem project={project} rtl={Math.floor(index % 2) === 0} className="w-full" />
+                    </FromBottomReveal>
+                  </div>
+                )
+              })
+            }
+          </div>
         </FromBottomReveal>
       </div>
+      <FromBottomReveal>
+        <div className="flex justify-center items-center mt-16">
+          <a href={"/projects"} className='decorated font-medium mt-2 text-green-500 text-base'>View All Projects</a>
+        </div>
+      </FromBottomReveal>
+
       {/* <div className="mt-40">
         <FromBottomReveal>
           <div className='flex flex-col justify-center items-center'>

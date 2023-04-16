@@ -7,7 +7,7 @@ type Props = {}
 export default function Footer({ }: Props) {
     return (
         <footer className="border-t border-white/5 mt-5">
-            <div className="mx-auto max-w-screen-xl py-5 flex justify-between px-5 md:px-10 lg:px-16">
+            <div className="mx-auto max-w-screen-xl py-5 flex flex-col-reverse md:flex-row gap-5 items-center justify-between px-5 md:px-10 lg:px-16">
                 <div>
                     <p className="text-sm text-white font-normal">
                         Designed & Built by <strong className="font-semibold text-green-500">Ali Hussnain.</strong>
