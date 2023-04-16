@@ -58,15 +58,15 @@ export default function ExperienceSection() {
               <nav className="flex lg:flex-col h-full lg:gap-0 min-w-max border-b-4 lg:border-l-4 lg:border-b-0 border-white/10 text-sm font-medium">
                 {
                   workList.map((work, index) => (
-                    <a key={index} onClick={() => setCurrentTabIndex(index)}
-                      className={`-mb-1 lg:-ml-1 lg:mb-0 text-base py-2.5 px-6 lg:px-6 cursor-pointer font-medium min-w-max 
+                    <button type="button" title={work.companyName} key={index} onClick={() => setCurrentTabIndex(index)}
+                      className={`-mb-1 lg:-ml-1 lg:mb-0 text-center lg:text-start text-base py-2.5 px-6 lg:px-6 cursor-pointer font-medium min-w-max 
                      ${currentTabIndex === index ?
                           " text-green-500 border-b-4 lg:border-l-4 lg:border-b-0 border-green-500 font-semibold "
                           : " text-gray-300/70 "
                         }
                      hover:text-green-500 hover:bg-gray-300/20 transition hover:font-semibold`}>
                       {work.companyName}
-                    </a>
+                    </button>
                   ))
                 }
               </nav>
