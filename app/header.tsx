@@ -10,11 +10,11 @@ export default function Header({ }: Props) {
             <div className="mx-auto px-4 sm:px-6 lg:px-20">
                 <div className="flex h-16 items-center justify-between">
                     <FromTopReveal>
-                        <a className="block text-green-500 font-bold text-3xl" href="/">
+                        <a className="block text-green-500 font-bold text-3xl" title='Logo' href="/">
                             {/* <span className='text-white/80'>{"<"}</span>
                             A<span className='text-white/80'>{" / "}</span>H
                             <span className='text-white/80'>{">"}</span> */}
-                            <Image src="/icons/logo.svg" height={60} width={60} alt="" />
+                            <Image src="/icons/logo.svg" height={60} width={60} alt="Logo" />
                         </a>
                     </FromTopReveal>
 
@@ -60,7 +60,7 @@ export default function Header({ }: Props) {
                             <div className="sm:flex sm:gap-4">
                                 <FromTopReveal duration={.4} delay={0.8}>
                                     <a href="/" className="border border-green-500 rounded-md px-4 py-1.5 md:py-2 text-sm font-medium text-green-500 shadow hover:bg-green-500/20">
-                                        View Resume
+                                        Resume
                                     </a>
                                 </FromTopReveal>
                             </div>

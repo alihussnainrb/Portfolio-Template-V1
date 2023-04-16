@@ -1,12 +1,13 @@
 import './globals.css'
 import Header from './header'
 import { Inter } from 'next/font/google'
-import { Metadata } from 'next';
+import Footer from './footer';
 
 const DESCRIPTION = "I'm a fullstack fullstack developer focused on creating seamless experiences that exceed user expectations. With expertise in design and development, I thrive on solving complex challenges and delivering high-quality products.";
+const TITLE = "Ali Hussnain | Full Stack Developer"
 
 export const metadata = {
-  title: 'Ali Hussnain | Full-Stack Developer',
+  title: TITLE,
   description: DESCRIPTION,
   icons: {
     shortcut: "/icons/logo.svg"
@@ -30,20 +31,29 @@ export const metadata = {
   publisher: "Ali Hussnain",
   twitter: {
     creator: "Ali Hussnain",
-    title: "Ali Hussnain | Full-Stack Developer",
+    title: TITLE,
     description: DESCRIPTION,
     images: {
-      url: "/images/about-img.jpg"
+      url: "https://www.alihussnainrb.com/images/about-img.jpg"
     },
     card: "summary_large_image",
   },
   openGraph: {
-    title: "Ali Hussnain | Full-Stack Developer",
+    title: TITLE,
     images: {
-      url: "/images/about-img.jpg"
+      url: "https://www.alihussnainrb.com/images/about-img.jpg"
     },
-    description: DESCRIPTION
+    description: DESCRIPTION,
+    type: "website"
   },
+  formatDetection: {
+    address: false,
+    date: true,
+    email: true,
+    telephone: true,
+    url: true
+  },
+  archives: "https://www.alihussnainrb.com/projects"
 }
 
 
@@ -63,6 +73,7 @@ export default function RootLayout({
       <body>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )

@@ -68,9 +68,9 @@ export default function ContactSection() {
         <div className="mt-20 relative flex items-center justify-center">
           <div className="w-full">
             <FromBottomReveal y={150}>
-              <div className="px-8 py-10 rounded theme-shadow">
+              <div className="px-8 py-10 rounded">
                 <div className="text-center mb-10">
-                  <h3 className="text-4xl font-bold text-white">Leave A Message</h3>
+                  <h3 className="text-3xl md:text-4xl font-bold text-white">Leave A Message</h3>
                   <p className="text-sm text-white/50 font-normal mt-2">I will be in touch with you as soon as possible.</p>
                 </div>
                 <form action="#" className="w-full">
@@ -91,7 +91,7 @@ export default function ContactSection() {
                     </div>
                   </div>
                   <div className="flex justify-center">
-                    <button type="button" className="py-3 px-5 mt-5 text-sm font-semibold text-center text-white rounded bg-green-500 w-52 hover:bg-green-600">Send message</button>
+                    <button type="button" className="py-3 px-5 mt-5 text-sm font-medium text-center text-white rounded bg-green-500 w-52 hover:bg-green-600">Send Message</button>
                   </div>
                 </form>
               </div>
