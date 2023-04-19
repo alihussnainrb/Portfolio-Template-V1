@@ -5,7 +5,7 @@ import { FromBottomReveal } from "@/shared_utils/RevealComponents";
 
 export default function AboutMeSection() {
   return (
-    <section id="about" className='mt-40 mx-auto max-w-screen-lg px-5 md:px-10 lg:px-16'>
+    <section id="about" className='mt-32 lg:mt-40 mx-auto max-w-screen-lg px-5 md:px-10 lg:px-16'>
       <FromBottomReveal>
         <div className="flex items-center">
           <span className='font-semibold text-green-500 mr-4 text-2xl hidden md:inline-block'>01.</span>
@@ -34,7 +34,7 @@ export default function AboutMeSection() {
         <div className="w-full lg:w-[400px]">
           <div className="mt-10 md:mt-20 relative group">
             <FromBottomReveal delay={.3} y={100}>
-              <Image src={'/images/about-img.jpg'} width="400" height="400" className="object-cover w-full object-center rounded-tr rounded-bl aspect-square" alt="Banner Image" />
+              <Image src={'/images/about-img.webp'} width="400" height="400" className="object-cover w-full object-center rounded-tr rounded-bl aspect-square" alt="Banner Image" />
               {/* <div className="absolute top-0 left-0 translate-x-5 translate-y-5 group-hover:translate-x-3 group-hover:translate-y-3 rounded-md border-2 -z-[1] border-green-500 transition w-full aspect-square"></div> */}
               <div className="absolute -top-1 -left-1 border-t-4 border-l-4 border-green-500 transition duration-500 group-hover:-translate-x-2 group-hover:-translate-y-2 -z-[1] rounded w-[40px] aspect-square"></div>
               <div className="absolute -bottom-1 -right-1 border-b-4 border-r-4 border-green-500 transition duration-500 group-hover:translate-x-2 group-hover:translate-y-2 -z-[1] rounded w-[40px] aspect-square"></div>
