@@ -1,13 +1,13 @@
-import * as nodemailer from 'nodemailer';
+// import * as nodemailer from 'nodemailer';
 
 
-let mailer = nodemailer.createTransport({
-    service: "gmail",
-    auth: {
+// let mailer = nodemailer.createTransport({
+//     service: "gmail",
+//     auth: {
         
-    }
-})
+//     }
+// })
 
-export async function POST(request: Request) {
+// export async function POST(request: Request) {
     
-}
+// }
