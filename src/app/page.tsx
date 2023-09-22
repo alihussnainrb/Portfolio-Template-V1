@@ -7,6 +7,7 @@ import cmsApi from "@/server/cms-api";
 import { FaGithub, FaLinkedinIn, FaSkype, FaTwitter } from "react-icons/fa"
 
 
+export const dynamic = "force-dynamic"
 
 
 export default async function Home() {
