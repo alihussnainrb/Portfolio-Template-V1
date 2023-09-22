@@ -24,7 +24,7 @@ export function PopupReveal({
     return (
         <motion.div
             initial={{ scale: 0 }}
-            whileInView={{
+            animate={{
                 scale: 1,
                 transition: {
                     type: "spring",
@@ -55,7 +55,7 @@ export function FadeReveal({
     return (
         <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{
+            animate={{
                 opacity: 1,
                 scale: 1,
                 transition: {
@@ -86,7 +86,7 @@ export function FromLeftReveal({
     return (
         <motion.div
             initial={{ x: "-100%", opacity: 0 }}
-            whileInView={{
+            animate={{
                 x: 0,
                 opacity: 1,
                 transition: {
@@ -117,7 +117,7 @@ export function FromRightReveal({
     return (
         <motion.div
             initial={{ x: "100%", opacity: 0 }}
-            whileInView={{
+            animate={{
                 x: 0,
                 opacity: 1,
                 transition: {
@@ -149,7 +149,7 @@ export function FromTopReveal({
     return (
         <motion.div
             initial={{ y: "-100%", opacity: 0 }}
-            whileInView={{
+            animate={{
                 y: 0,
                 opacity: 1,
                 transition: {
@@ -186,7 +186,7 @@ export function FromBottomReveal(
     return (
         <motion.div
             initial={{ y: y, opacity: 0, scale: 1 }}
-            whileInView={{
+            animate={{
                 y: 0,
                 opacity: 1,
                 scale: 1,

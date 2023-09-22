@@ -1,7 +1,7 @@
 'use client';
 import Image from "next/image";
 import { FaCaretRight } from "react-icons/fa";
-import { FromBottomReveal } from "@/shared_utils/RevealComponents";
+import { FromBottomReveal } from "../framer";
 
 export default function AboutMeSection() {
   return (

@@ -1,8 +1,8 @@
 'use client';
-import type { Project } from "@/data/projectsList";
-import { FromBottomReveal } from "@/shared_utils/RevealComponents";
-import { FeaturedProjectItem } from "../components/FeaturedProjectItem";
-import { ProjectItem } from "../components/ProjectItem";
+
+import { FromBottomReveal } from "../framer";
+import { FeaturedProjectItem } from "../FeaturedProjectItem";
+import { Project } from "@/server/cms-api";
 
 
 

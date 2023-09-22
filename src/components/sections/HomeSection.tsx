@@ -1,9 +1,8 @@
 'use client';
 import { FaChevronRight } from "react-icons/fa";
-import { FromBottomReveal } from "@/shared_utils/RevealComponents";
-import { Player } from "@lottiefiles/react-lottie-player";
 import Typewriter from 'typewriter-effect';
 import Image from "next/image";
+import { FromBottomReveal, PopupReveal } from "../framer";
 
 export default function HomeSection() {
   return (
@@ -48,10 +47,9 @@ export default function HomeSection() {
             </FromBottomReveal>
           </div>
         </div>
-        <div className="lg:w-1/2 lg:absolute lg:top-16 lg:right-0" style={{ zIndex: -1 }}>
+        <PopupReveal className="lg:w-1/2 lg:absolute lg:top-16 lg:right-0 z-[-1]">
           <Image src={'/images/home.gif'} width="500" height="500" alt="Home Section Animation Image" />
-          {/* <Player src={"/lottie/home.json"} autoplay loop controls={false} className="max-w-full" style={{ width: 500, height: 500 }}></Player> */}
-        </div>
+        </PopupReveal>
       </div>
     </section>
   );

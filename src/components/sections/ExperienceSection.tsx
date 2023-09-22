@@ -1,6 +1,6 @@
 'use client'
 import { FaCaretRight } from "react-icons/fa";
-import { FromBottomReveal } from "@/shared_utils/RevealComponents";
+import { FromBottomReveal } from "../framer";
 import { useState } from "react";
 
 

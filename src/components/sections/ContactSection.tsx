@@ -1,5 +1,5 @@
 'use client';
-import { FromBottomReveal, FromLeftReveal } from "@/shared_utils/RevealComponents";
+import { FromBottomReveal, FromLeftReveal } from "../framer";
 import { FaEnvelope, FaPhone, FaSkype } from "react-icons/fa";
 
 export default function ContactSection() {

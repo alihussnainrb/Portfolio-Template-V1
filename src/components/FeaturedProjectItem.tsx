@@ -1,5 +1,7 @@
-import { type Project } from "@/data/projectsList";
+import { Project } from "@/server/cms-api";
 import Image from "next/image";
+
+
 
 
 
@@ -21,7 +23,9 @@ export function FeaturedProjectItem({
     <div className={className + " featured-project-item " + (rtl ? "dir-rtl" : "")}>
       <div className="project-info py-5 lg:py-0">
         <p className="text-xs md:text-sm text-green-500 font-semibold hidden lg:block">Featured Project</p>
-        <a href="#" className="text-2xl md:text-3xl font-bold text-white transition hover:text-green-400">{project.name}</a>
+        <a href="#" className="text-2xl md:text-3xl font-bold text-white transition hover:text-green-400">
+          {project.title}
+        </a>
         <div className="tagline lg:p-6 mt-2">
           <p className="text-sm md:text-base font-normal text-white">
             {project.description}
@@ -39,7 +43,7 @@ export function FeaturedProjectItem({
         </a> */}
       </div>
       <div className="img-container h-[350px] relative group rounded-md overflow-hidden shadow-md shadow-green-300/40 transition blur-[1px] hover:blur-0">
-        <Image src={"https:" + (project.image ?? "//source.unsplash.com/random/?coding")}
+        <Image src={(project.image ?? "https://source.unsplash.com/random/?coding")}
           height="350" width="700" className="object-cover object-center transition duration-1000 group-hover:scale-125" alt="" />
         <div className="absolute top-0 left-0 bg-green-400/30 group-hover:bg-green-400/0 z-[1] group-hover:border-transparent rounded-md transition w-full h-full"></div>
       </div>

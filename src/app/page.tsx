@@ -1,19 +1,17 @@
+import AboutMeSection from "@/components/sections/AboutMeSection";
+import ContactSection from "@/components/sections/ContactSection";
+import ExperienceSection from "@/components/sections/ExperienceSection";
+import HomeSection from "@/components/sections/HomeSection";
+import WorkSection from "@/components/sections/WorkSection";
+import cmsApi from "@/server/cms-api";
 import { FaGithub, FaLinkedinIn, FaSkype, FaTwitter } from "react-icons/fa"
-import { getFeaturedProjects, getProjects } from "./cms/projects";
-import HomeSection from "./sections/HomeSection";
-import AboutMeSection from "./sections/AboutMeSection";
-import ExperienceSection from "./sections/ExperienceSection";
-import WorkSection from "./sections/WorkSection";
-import ContactSection from "./sections/ContactSection";
-// import TestimonialSection from "./sections/TestimonialSection";
-
 
 
 
 
 export default async function Home() {
-  // const featuredProjects = await getFeaturedProjects();
-  const projects = await getProjects(9);
+  const projects = await cmsApi.getProjects()
+
 
   return (
     <main className='overflow-hidden max-w-screen-xl mx-auto relative'>
