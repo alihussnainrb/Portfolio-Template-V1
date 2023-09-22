@@ -18,29 +18,33 @@ export type Project = {
 
 const cmsApi = {
   getProjects: async (limit = 10) => {
-    const projects: Project[] = (
-      await cosmicClient.objects
-        .find({
-          type: "projects",
-          // status: "published",
-        })
-        //   .props(["tags", "image"])
-        .limit(limit)
-    )?.objects?.map((object: any) => {
-      return {
-        title: object.title,
-        slug: object.slug,
-        image: object?.metadata?.image?.url ?? "",
-        github_url: object.metadata?.github_url,
-        preview_url: object.metadata?.preview_url,
-        description: object.metadata?.description,
-        tags:
-          object.metadata?.tags?.flatMap(
-            (tagObj: { tag: string }) => tagObj.tag
-          ) ?? [],
-      };
-    });
-    return projects;
+    try {
+      const projects: Project[] = (
+        await cosmicClient.objects
+          .find({
+            type: "projects",
+            // status: "published",
+          })
+          //   .props(["tags", "image"])
+          .limit(limit)
+      )?.objects?.map((object: any) => {
+        return {
+          title: object.title,
+          slug: object.slug,
+          image: object?.metadata?.image?.url ?? "",
+          github_url: object.metadata?.github_url,
+          preview_url: object.metadata?.preview_url,
+          description: object.metadata?.description,
+          tags:
+            object.metadata?.tags?.flatMap(
+              (tagObj: { tag: string }) => tagObj.tag
+            ) ?? [],
+        };
+      });
+      return projects;
+    } catch (error) {
+      return [];
+    }
   },
 };
 
