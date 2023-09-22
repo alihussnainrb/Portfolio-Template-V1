@@ -2,12 +2,13 @@ import './globals.css'
 import Header from './header'
 import { Inter } from 'next/font/google'
 import Footer from './footer';
-// import { Analytics } from '@vercel/analytics/react';
+import type { Metadata } from 'next'
+import { Analytics } from '@vercel/analytics/react';
 
 const DESCRIPTION = "I'm a fullstack developer focused on creating seamless experiences that exceed user expectations. With expertise in design and development, I thrive on solving complex challenges and delivering high-quality products.";
 const TITLE = "Ali Hussnain | Full Stack Developer"
 
-export const metadata = {
+export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
   icons: {
@@ -54,7 +55,8 @@ export const metadata = {
       url: "https://www.alihussnainrb.com/images/about-img.jpg"
     },
     description: DESCRIPTION,
-    type: "website"
+    type: "website",
+    url: "https://www.alihussnainrb.com"
   },
   formatDetection: {
     address: false,
@@ -84,7 +86,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
-        {/* <Analytics /> */}
+        <Analytics />
       </body>
     </html>
   )
