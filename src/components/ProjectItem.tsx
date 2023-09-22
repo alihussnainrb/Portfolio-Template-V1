@@ -35,19 +35,19 @@ export function ProjectItem({
                         variant === "small"
                             ? <FaRegFolder className="text-green-500 font-normal text-4xl" />
                             : <a href='#' className={'text-gray-300 font-bold transition hover:text-green-500 text-2xl'}>
-                                {project.name}
+                                {project.title}
                             </a>
                     }
                     <div className="flex gap-5">
                         {
-                            project.github !== "" &&
-                            <a href={project.github}>
+                            project.github_url &&
+                            <a href={project.github_url}>
                                 <FaGithub className="text-white font-normal text-xl transition hover:text-green-500" />
                             </a>
                         }
                         {
-                            project.preview !== "" &&
-                            <a href={project.preview}>
+                            project.preview_url &&
+                            <a href={project.preview_url}>
                                 <FiExternalLink className="text-white font-normal text-xl transition hover:text-green-500" />
                             </a>
                         }
@@ -57,7 +57,7 @@ export function ProjectItem({
                     {
                         variant === "small" &&
                         <a href='#' className={'text-gray-300 font-bold transition hover:text-green-500 text-lg'}>
-                            {project.name}
+                            {project.title}
                         </a>
                     }
                     <p className={"text-gray-300/80 font-normal mt-4 line-clamp-6 " + (variant === "large" ? "text-base" : "text-sm")}>
