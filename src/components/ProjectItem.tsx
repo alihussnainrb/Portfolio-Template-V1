@@ -1,7 +1,7 @@
 import { FaGithub, FaRegFolder } from 'react-icons/fa';
 import { FiExternalLink } from 'react-icons/fi';
 import { CSSProperties } from 'react';
-import { Project } from '@prisma/client';
+import { Project } from '@/server/cms-api';
 
 
 
